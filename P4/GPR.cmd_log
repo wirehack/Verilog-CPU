@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ISEProject/P4/GPR.xst" -ofn "D:/ISEProject/P4/GPR.syr" 

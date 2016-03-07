@@ -1,0 +1,34 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/ISEProject/P5/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Parameter xsthdpdir set to D:/ISEProject/P5/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "datapath/multDiv.v" in library work
+ERROR:HDLCompilers:26 - "datapath/multDiv.v" line 33 unexpected token: ')'
+ERROR:HDLCompilers:26 - "datapath/multDiv.v" line 33 expecting ')', found ';'
+ERROR:HDLCompilers:26 - "datapath/multDiv.v" line 49 expecting 'end', found 'endmodule'
+Module <multDiv> compiled
+ERROR:HDLCompilers:26 - "datapath/multDiv.v" line 50 expecting 'endmodule', found 'EOF'
+Analysis of file <"multDiv.prj"> failed.
+--> 
+
+Total memory usage is 258564 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

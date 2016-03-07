@@ -1,0 +1,86 @@
+`timescale 1ns / 1ps
+
+////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer:
+//
+// Create Date:   20:16:51 10/25/2015
+// Design Name:   GPR
+// Module Name:   D:/ISEProject/P2_GPR/GPR_tb.v
+// Project Name:  P2_GPR
+// Target Device:  
+// Tool versions:  
+// Description: 
+//
+// Verilog Test Fixture created by ISE for module: GPR
+//
+// Dependencies:
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+////////////////////////////////////////////////////////////////////////////////
+
+module GPR_tb;
+
+	// Inputs
+	reg Clk;
+	reg Reset;
+	reg [4:0] RS1;
+	reg [4:0] RS2;
+	reg [4:0] RD;
+	reg RegWrite;
+	reg [31:0] WData;
+
+	// Outputs
+	wire [31:0] RData1;
+	wire [31:0] RData2;
+
+	// Instantiate the Unit Under Test (UUT)
+	GPR uut (
+		.Clk(Clk), 
+		.Reset(Reset), 
+		.RS1(RS1), 
+		.RS2(RS2), 
+		.RD(RD), 
+		.RegWrite(RegWrite), 
+		.WData(WData), 
+		.RData1(RData1), 
+		.RData2(RData2)
+	);
+
+	initial begin
+		// Initialize Inputs
+		Clk = 0;
+		Reset = 1;
+		RS1 = 0;
+		RS2 = 0;
+		RD = 0;
+		RegWrite = 0;
+		WData = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+        
+		// Add stimulus here
+        Reset=0;
+        #50
+        RS1=5'b10;
+        RS2=5'b110;//read
+        #50
+        RD=5'b110;
+        WData=32'b1010110110;
+        RegWrite=1;//write
+        #50
+        RegWrite=0;
+        WData=32'b10010;//unable to write
+        #50
+        RS2=5'b10101;
+        RS1=5'b110;//read
+        #50
+        Reset=1;//reset
+	end
+    always #10 Clk=~Clk;
+endmodule
+

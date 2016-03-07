@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="2546" delta="old" >&quot;<arg fmt="%s" index="1">datapath/im.v</arg>&quot; line <arg fmt="%d" index="2">30</arg>: reading initialization file &quot;<arg fmt="%s" index="3">D:\ISEProject\P4\datapath\code_p4.txt</arg>&quot;.
+</msg>
+
+<msg type="info" file="Xst" num="2546" delta="old" >&quot;<arg fmt="%s" index="1">datapath/dm.v</arg>&quot; line <arg fmt="%d" index="2">33</arg>: reading initialization file &quot;<arg fmt="%s" index="3">D:\ISEProject\P4\datapath\data_p4.txt</arg>&quot;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">i</arg>&gt; in unit &lt;<arg fmt="%s" index="2">GPR</arg>&gt; has a constant value of <arg fmt="%s" index="3">100000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">im</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">func&lt;5:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">func&lt;2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">func&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">36</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">41</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">46</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">47</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">36</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">40</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">41</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">41</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">41</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">41</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">44</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">44</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">49</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">41</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">47</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">47</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">control/ctrl.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>: The result of a <arg fmt="%d" index="3">1</arg>x<arg fmt="%d" index="4">1</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">1</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">5</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">dout</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">32</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">imm32</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="info" file="Xst" num="738" delta="old" >HDL ADVISOR - <arg fmt="%d" index="1">1024</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">register</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">32</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">$old_S_1</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">imm32&lt;31&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">regAddr&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">32</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">dout</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">MemRead</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">pc_in</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">im</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">control</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux_wreg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">extender</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">gpr</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux_alu</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">alu</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">nextPC</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">dm</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux_wregdata</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mips</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_dm</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">extender/imm32_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mips</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extender/imm32_24&gt; &lt;extender/imm32_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">extender/imm32_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mips</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extender/imm32_8&gt; &lt;extender/imm32_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2254" delta="old" >Area constraint could not be met for block &lt;<arg fmt="%s" index="1">mips</arg>&gt;, final ratio is <arg fmt="%i" index="2">170</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

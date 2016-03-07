@@ -1,0 +1,55 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    21:14:00 10/16/2015 
+// Design Name: 
+// Module Name:    comparator 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module comparator(
+    input A0,
+    input A1,
+    input A2,
+    input A3,
+    input A4,
+    input A5,
+    input A6,
+    input A7,
+    input B0,
+    input B1,
+    input B2,
+    input B3,
+    input B4,
+    input B5,
+    input B6,
+    input B7,
+    output ALBO,
+    output AEBO,
+    output AGBO
+    );
+	reg ALBO,AEBO,AGBO;
+    wire[7:0] Asignal,Bsignal;
+    assign Asignal={A7,A6,A5,A4,A3,A2,A1,A0};
+    assign Bsignal={B7,B6,B5,B4,B3,B2,B1,B0};
+    always@*
+        begin
+            if(Asignal>Bsignal)
+                begin ALBO=0; AEBO=0; AGBO=1; end
+            else if(Asignal==Bsignal)
+                begin ALBO=0; AEBO=1; AGBO=0; end
+            else
+                begin ALBO=1; AEBO=0; AGBO=0; end
+        end
+endmodule

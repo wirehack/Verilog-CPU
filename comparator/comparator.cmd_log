@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ISEProject/comparator/comparator.xst" -ofn "D:/ISEProject/comparator/comparator.syr" 

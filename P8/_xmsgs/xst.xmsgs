@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\ISEProject\P8\microSystem.v" Line 75: Port <arg fmt="%s" index="1">ACK_O</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\ISEProject\P8\ipcore_dir\clk_ip_core.v" Line 128: Assignment to <arg fmt="%s" index="1">locked_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\ISEProject\P8\ipcore_dir\clk_ip_core.v" Line 129: Assignment to <arg fmt="%s" index="1">status_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\ISEProject\P8\ipcore_dir\IM_4BX6K.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">IM_4BX6K</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\datapath\multDiv.v" Line 81: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\ISEProject\P8\datapath\multDiv.v" Line 36: Net &lt;<arg fmt="%s" index="1">unsigned_mult_result[63]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\ISEProject\P8\ipcore_dir\DM_4BX4K.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">DM_4BX4K</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\MiniUART_src\rxd.v" Line 54: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\MiniUART_src\rxd.v" Line 55: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\MiniUART_src\rxd.v" Line 62: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\MiniUART_src\rxd.v" Line 65: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\MiniUART_src\rxd.v" Line 73: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\MiniUART_src\txd.v" Line 74: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\MiniUART_src\utils.v" Line 58: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\MiniUART_src\uart.v" Line 54: Result of <arg fmt="%d" index="1">39</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">32</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\ISEProject\P8\SegmentDisplay.v" Line 63: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">user_pb</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\ISEProject\P8\microSystem.v</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">ACK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MiniUART</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">D2</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">unsigned_mult_result</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">signed_mult_result</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">unsigned_div_result</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">signed_div_result</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">DAT_I&lt;31:16&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hwint_pend_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hwint_pend_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hwint_pend_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hwint_pend_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hwint_pend_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3212" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">num</arg>&gt; prevents it from being combined with the RAM &lt;<arg fmt="%s" index="2">Mram_SEVEN_SEG0_AG</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PRId_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">PRId_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CP0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">if_id_reg/pc4_out_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mips</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;if_id_reg/pc8_out_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">if_id_reg/pc4_out_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mips</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;if_id_reg/pc8_out_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cpu/CP0_reg/hwint_pend_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cpu/CP0_reg/hwint_pend_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cpu/CP0_reg/hwint_pend_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cpu/CP0_reg/hwint_pend_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cpu/CP0_reg/hwint_pend_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cpu/multDiv_in/count_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cpu/multDiv_in/count_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis1/count_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis1/count_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis1/count_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">microSystem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/seg4x7_sel_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/seg4x7_sel_FSM_FFd1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/seg4x7_sel_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/seg4x7_sel_FSM_FFd2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/seg4x7_sel_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/seg4x7_sel_FSM_FFd3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/seg4x7_sel_FSM_FFd4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/seg4x7_sel_FSM_FFd4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cpu/ex_mem_reg/mfc0_out</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cpu/ex_mem_reg/MemtoReg_out_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SegmentDis2/count_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SegmentDis1/count_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cpu/id_ex_reg/jal_out</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cpu/id_ex_reg/RegDst_out_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cpu/id_ex_reg/mfc0_out</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cpu/id_ex_reg/MemtoReg_out_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cpu/CP0_reg/PRId_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microSystem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cpu/CP0_reg/PRId_26&gt; &lt;cpu/CP0_reg/PRId_18&gt; &lt;cpu/CP0_reg/PRId_17&gt; &lt;cpu/CP0_reg/PRId_12&gt; &lt;cpu/CP0_reg/PRId_8&gt; &lt;cpu/CP0_reg/PRId_5&gt; &lt;cpu/CP0_reg/PRId_4&gt; &lt;cpu/CP0_reg/PRId_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>

@@ -1,0 +1,338 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: mux_32bit_3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mux_32bit_3.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mux_32bit_3"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : mux_32bit_3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "datapath/mux.v" in library work
+Module <mux_5bit> compiled
+Module <mux_32bit_2> compiled
+Module <mux_32bit_3> compiled
+No errors in compilation
+Analysis of file <"mux_32bit_3.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mux_32bit_3> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mux_32bit_3>.
+Module <mux_32bit_3> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux_32bit_3>.
+    Related source file is "datapath/mux.v".
+WARNING:Xst:737 - Found 32-bit latch for signal <dout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit 3-to-1 multiplexer for signal <dout$mux0000>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <mux_32bit_3> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Multiplexers                                         : 1
+ 32-bit 3-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Multiplexers                                         : 1
+ 32-bit 3-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mux_32bit_3> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mux_32bit_3, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mux_32bit_3.ngr
+Top Level Output File Name         : mux_32bit_3
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 130
+
+Cell Usage :
+# BELS                             : 65
+#      LUT2                        : 1
+#      LUT3                        : 32
+#      MUXF5                       : 32
+# FlipFlops/Latches                : 32
+#      LD_1                        : 32
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 130
+#      IBUF                        : 98
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa3s50vqg100-4 
+
+ Number of Slices:                       33  out of    768     4%  
+ Number of 4 input LUTs:                 33  out of   1536     2%  
+ Number of IOs:                         130
+ Number of bonded IOBs:                 130  out of     63   206% (*) 
+    IOB Flip Flops:                      32
+ Number of GCLKs:                         1  out of      8    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)  | Load  |
+------------------------------------+------------------------+-------+
+dout_cmp_eq00001(dout_cmp_eq00001:O)| BUFG(*)(dout_0)        | 32    |
+------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 4.133ns
+   Maximum output required time after clock: 7.078ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'dout_cmp_eq00001'
+  Total number of paths / destination ports: 160 / 32
+-------------------------------------------------------------------------
+Offset:              4.133ns (Levels of Logic = 3)
+  Source:            select<0> (PAD)
+  Destination:       dout_0 (LATCH)
+  Destination Clock: dout_cmp_eq00001 rising
+
+  Data Path: select<0> to dout_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.821   2.198  select_0_IBUF (select_0_IBUF)
+     LUT3:I0->O            1   0.551   0.000  Mmux_dout_mux000081 (Mmux_dout_mux00008)
+     MUXF5:I0->O           1   0.360   0.000  Mmux_dout_mux00008_f5 (dout_mux0000<12>)
+     LD_1:D                    0.203          dout_12
+    ----------------------------------------
+    Total                      4.133ns (1.935ns logic, 2.198ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dout_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 1)
+  Source:            dout_31 (LATCH)
+  Destination:       dout<31> (PAD)
+  Source Clock:      dout_cmp_eq00001 rising
+
+  Data Path: dout_31 to dout<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.633   0.801  dout_31 (dout_31)
+     OBUF:I->O                 5.644          dout_31_OBUF (dout<31>)
+    ----------------------------------------
+    Total                      7.078ns (6.277ns logic, 0.801ns route)
+                                       (88.7% logic, 11.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.29 secs
+ 
+--> 
+
+Total memory usage is 286628 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

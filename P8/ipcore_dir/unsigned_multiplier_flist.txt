@@ -1,0 +1,14 @@
+# Output products list for <unsigned_multiplier>
+_xmsgs\pn_parser.xmsgs
+unsigned_multiplier.asy
+unsigned_multiplier.gise
+unsigned_multiplier.ngc
+unsigned_multiplier.v
+unsigned_multiplier.veo
+unsigned_multiplier.xco
+unsigned_multiplier.xise
+unsigned_multiplier\doc\mult_gen_ds255.pdf
+unsigned_multiplier\doc\mult_gen_v11_2_readme.txt
+unsigned_multiplier\doc\mult_gen_v11_2_vinfo.html
+unsigned_multiplier_flist.txt
+unsigned_multiplier_xmdf.tcl

@@ -1,0 +1,376 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: GPR.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GPR.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GPR"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : GPR
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "datapath/GPR.v" in library work
+Module <GPR> compiled
+No errors in compilation
+Analysis of file <"GPR.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <GPR> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <GPR>.
+Module <GPR> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <GPR> has a constant value of 100000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <GPR>.
+    Related source file is "datapath/GPR.v".
+    Found 32-bit 32-to-1 multiplexer for signal <RData1>.
+    Found 32-bit 32-to-1 multiplexer for signal <RData2>.
+    Found 1024-bit register for signal <register>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <register>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+Unit <GPR> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32
+ 32-bit register                                       : 32
+# Multiplexers                                         : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Multiplexers                                         : 64
+ 1-bit 32-to-1 multiplexer                             : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GPR> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GPR, actual ratio is 143.
+Optimizing block <GPR> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <GPR>, final ratio is 143.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GPR.ngr
+Top Level Output File Name         : GPR
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 114
+
+Cell Usage :
+# BELS                             : 2024
+#      LUT3                        : 1056
+#      LUT4                        : 8
+#      MUXF5                       : 512
+#      MUXF6                       : 256
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+# FlipFlops/Latches                : 1024
+#      FDCE                        : 1024
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 113
+#      IBUF                        : 49
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa3s50vqg100-4 
+
+ Number of Slices:                     1104  out of    768   143% (*) 
+ Number of Slice Flip Flops:           1024  out of   1536    66%  
+ Number of 4 input LUTs:               1064  out of   1536    69%  
+ Number of IOs:                         114
+ Number of bonded IOBs:                 114  out of     63   180% (*) 
+ Number of GCLKs:                         1  out of      8    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 1024  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 1024  |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 7.056ns
+   Maximum output required time after clock: 10.174ns
+   Maximum combinational path delay: 14.076ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 7168 / 2048
+-------------------------------------------------------------------------
+Offset:              7.056ns (Levels of Logic = 3)
+  Source:            WReg<3> (PAD)
+  Destination:       register_14_0 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: WReg<3> to register_14_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.821   1.422  WReg_3_IBUF (WReg_3_IBUF)
+     LUT4:I0->O            4   0.551   1.256  register_10_not000131 (N14)
+     LUT3:I0->O           32   0.551   1.853  register_14_not00011 (register_14_not0001)
+     FDCE:CE                   0.602          register_14_0
+    ----------------------------------------
+    Total                      7.056ns (2.525ns logic, 4.531ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 2048 / 64
+-------------------------------------------------------------------------
+Offset:              10.174ns (Levels of Logic = 6)
+  Source:            register_0_31 (FF)
+  Destination:       RData1<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: register_0_31 to RData1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.720   1.072  register_0_31 (register_0_31)
+     LUT3:I1->O            1   0.551   0.000  mux24_10 (mux24_10)
+     MUXF5:I0->O           1   0.360   0.000  mux24_8_f5 (mux24_8_f5)
+     MUXF6:I0->O           1   0.342   0.000  mux24_6_f6 (mux24_6_f6)
+     MUXF7:I0->O           1   0.342   0.000  mux24_4_f7 (mux24_4_f7)
+     MUXF8:I0->O           1   0.342   0.801  mux24_2_f8 (RData1_31_OBUF)
+     OBUF:I->O                 5.644          RData1_31_OBUF (RData1<31>)
+    ----------------------------------------
+    Total                     10.174ns (8.301ns logic, 1.873ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1984 / 64
+-------------------------------------------------------------------------
+Delay:               14.076ns (Levels of Logic = 7)
+  Source:            RReg1<0> (PAD)
+  Destination:       RData1<31> (PAD)
+
+  Data Path: RReg1<0> to RData1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           512   0.821   4.873  RReg1_0_IBUF (RReg1_0_IBUF)
+     LUT3:I0->O            1   0.551   0.000  mux_6 (mux_6)
+     MUXF5:I1->O           1   0.360   0.000  mux_5_f5 (mux_5_f5)
+     MUXF6:I1->O           1   0.342   0.000  mux_4_f6 (mux_4_f6)
+     MUXF7:I1->O           1   0.342   0.000  mux_3_f7 (mux_3_f7)
+     MUXF8:I1->O           1   0.342   0.801  mux_2_f8 (RData1_0_OBUF)
+     OBUF:I->O                 5.644          RData1_0_OBUF (RData1<0>)
+    ----------------------------------------
+    Total                     14.076ns (8.402ns logic, 5.674ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.90 secs
+ 
+--> 
+
+Total memory usage is 317348 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

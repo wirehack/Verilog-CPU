@@ -1,0 +1,28 @@
+Command line:
+   microSystem_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1668
+
+Tue Dec 29 23:04:01 2015
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 861.36 Meg
+
+ Total Signals          : 1013
+ Total Nets             : 3953
+ Total Signal Drivers   : 444
+ Total Blocks           : 90
+ Total Primitive Blocks : 76
+ Total Processes        : 593
+ Total Traceable Variables  : 985
+ Total Scalar Nets and Variables : 140291
+
+ Total Simulation Time: 0.375 sec
+
+ Current Memory Usage: 704.074 Meg
+
+Tue Dec 29 23:06:26 2015
+

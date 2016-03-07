@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ISEProject/P4/mux_32bit_2.xst" -ofn "D:/ISEProject/P4/mux_32bit_2.syr" 

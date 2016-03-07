@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/bridge.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/control/ctrl.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/control/forwarding.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/control/hazard.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/ALU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/BE.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/C0.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/CMP.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/COCOTimer.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/EX_MEM.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/GPR.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/ID_EX.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/IF_ID.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/Load_ext.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/MEM_WB.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/dm.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/ext.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/im.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/microSystem.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/multDiv.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/mux.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/npc.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/datapath/pc.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ISEProject/P7/mips.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

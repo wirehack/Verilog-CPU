@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xilinx="http://www.xilinx.com" >
+   <spirit:vendor>xilinx.com</spirit:vendor>
+   <spirit:library>projects</spirit:library>
+   <spirit:name>unsigned_multiplier</spirit:name>
+   <spirit:version>1.0</spirit:version>
+   <spirit:componentInstances>
+      <spirit:componentInstance>
+         <spirit:instanceName>unsigned_multiplier</spirit:instanceName>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="mult_gen" spirit:version="11.2" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.INTERNALUSER">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COMPONENT_NAME">unsigned_multiplier</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MULTTYPE">Parallel_Multiplier</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORTATYPE">Unsigned</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORTAWIDTH">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORTBTYPE">Unsigned</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORTBWIDTH">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CONSTVALUE">129</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CCMIMP">Distributed_Memory</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MULTIPLIER_CONSTRUCTION">Use_LUTs</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OPTGOAL">Speed</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_CUSTOM_OUTPUT_WIDTH">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OUTPUTWIDTHHIGH">63</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OUTPUTWIDTHLOW">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USEROUNDING">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ROUNDPOINT">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PIPESTAGES">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CLOCKENABLE">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.SYNCCLEAR">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.SCLRCEPRIORITY">SCLR_Overrides_CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ZERODETECT">false</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties>
+               <xilinx:projectOptions>
+                  <xilinx:projectName>unsigned_multiplier</xilinx:projectName>
+                  <xilinx:outputDirectory>./</xilinx:outputDirectory>
+                  <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+                  <xilinx:subWorkingDirectory>./tmp/_cg/</xilinx:subWorkingDirectory>
+               </xilinx:projectOptions>
+               <xilinx:part>
+                  <xilinx:device>xc6slx150</xilinx:device>
+                  <xilinx:deviceFamily>spartan6</xilinx:deviceFamily>
+                  <xilinx:package>fgg676</xilinx:package>
+                  <xilinx:speedGrade>-2</xilinx:speedGrade>
+               </xilinx:part>
+               <xilinx:flowOptions>
+                  <xilinx:busFormat>BusFormatParenNotRipped</xilinx:busFormat>
+                  <xilinx:designEntry>Verilog</xilinx:designEntry>
+                  <xilinx:asySymbol>true</xilinx:asySymbol>
+                  <xilinx:flowVendor>Synplicity</xilinx:flowVendor>
+                  <xilinx:addPads>false</xilinx:addPads>
+                  <xilinx:removeRPMs>false</xilinx:removeRPMs>
+                  <xilinx:createNDF>false</xilinx:createNDF>
+                  <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+                  <xilinx:formalVerification>false</xilinx:formalVerification>
+               </xilinx:flowOptions>
+               <xilinx:simulationOptions>
+                  <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+                  <xilinx:simulationLanguage>Verilog</xilinx:simulationLanguage>
+                  <xilinx:foundationSym>false</xilinx:foundationSym>
+               </xilinx:simulationOptions>
+               <xilinx:packageInfo>
+                  <xilinx:sourceCoreCreationDate>2013-07-22+11:36</xilinx:sourceCoreCreationDate>
+               </xilinx:packageInfo>
+            </xilinx:instanceProperties>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+   </spirit:componentInstances>
+   <spirit:vendorExtensions>
+      <xilinx:instanceProperties>
+         <xilinx:projectOptions>
+            <xilinx:projectName>unsigned_multiplier</xilinx:projectName>
+            <xilinx:outputDirectory>./</xilinx:outputDirectory>
+            <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+            <xilinx:subWorkingDirectory>./tmp/_cg/</xilinx:subWorkingDirectory>
+         </xilinx:projectOptions>
+         <xilinx:part>
+            <xilinx:device>xc6slx150</xilinx:device>
+            <xilinx:deviceFamily>spartan6</xilinx:deviceFamily>
+            <xilinx:package>fgg676</xilinx:package>
+            <xilinx:speedGrade>-2</xilinx:speedGrade>
+         </xilinx:part>
+         <xilinx:flowOptions>
+            <xilinx:busFormat>BusFormatParenNotRipped</xilinx:busFormat>
+            <xilinx:designEntry>Verilog</xilinx:designEntry>
+            <xilinx:asySymbol>true</xilinx:asySymbol>
+            <xilinx:flowVendor>Synplicity</xilinx:flowVendor>
+            <xilinx:addPads>false</xilinx:addPads>
+            <xilinx:removeRPMs>false</xilinx:removeRPMs>
+            <xilinx:createNDF>false</xilinx:createNDF>
+            <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+            <xilinx:formalVerification>false</xilinx:formalVerification>
+         </xilinx:flowOptions>
+         <xilinx:simulationOptions>
+            <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+            <xilinx:simulationLanguage>Verilog</xilinx:simulationLanguage>
+            <xilinx:foundationSym>false</xilinx:foundationSym>
+         </xilinx:simulationOptions>
+      </xilinx:instanceProperties>
+   </spirit:vendorExtensions>
+</spirit:design>
+

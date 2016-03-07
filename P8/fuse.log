@@ -1,0 +1,101 @@
+Running: D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/ISEProject/P8/microSystem_tb_isim_beh.exe -prj D:/ISEProject/P8/microSystem_tb_beh.prj work.microSystem_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/ISEProject/P8/ipcore_dir/clk_ip_core.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/MiniUART_src/utils.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/MiniUART_src/txd.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/MiniUART_src/rxd.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/ipcore_dir/IM_4BX6K.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/ipcore_dir/DM_4BX4K.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/pc.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/npc.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/mux.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/multDiv.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/MEM_WB.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/Load_ext.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/IF_ID.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/ID_EX.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/GPR.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/EX_MEM.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/ext.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/CMP.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/C0.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/BE.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/datapath/ALU.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/control/hazard.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/control/forwarding.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/control/ctrl.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/SegmentDisplay.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/mips.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/MiniUART_src/uart.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/LED.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/COCOTimer.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/bridge.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/microSystem.v" into library work
+Analyzing Verilog file "D:/ISEProject/P8/microSystem_tb.v" into library work
+Analyzing Verilog file "D:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/ISEProject/P8/microSystem.v" Line 75: Port ACK_O is not connected to this instance
+Completed static elaboration
+Compiling module IBUFG
+Compiling module dcm_sp_clock_divide_by_2
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_clock_lost
+Compiling module DCM_SP(CLKIN_PERIOD=20.0)
+Compiling module BUFG
+Compiling module clk_ip_core
+Compiling module pc
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module IM_4BX6K
+Compiling module mux_32bit_6
+Compiling module IF_ID
+Compiling module ctrl
+Compiling module hazard
+Compiling module npc
+Compiling module ext
+Compiling module GPR
+Compiling module mux_32bit_5
+Compiling module CMP
+Compiling module ID_EX
+Compiling module forwarding
+Compiling module mux_32bit_2
+Compiling module mux_5bit_3
+Compiling module multDiv
+Compiling module ALU
+Compiling module EX_MEM
+Compiling module BE_EN
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module DM_4BX4K
+Compiling module CP0
+Compiling module MEM_WB
+Compiling module Load_ext
+Compiling module mips
+Compiling module bridge
+Compiling module COCOTimer
+Compiling module rx_unit
+Compiling module ctrl_shift
+Compiling module trans_reg
+Compiling module tx_unit
+Compiling module counter(size_cnt=16)
+Compiling module divisor(size_cnt_rx=16,size_cnt_...
+Compiling module MiniUART
+Compiling module SegmentDisplay
+Compiling module LED
+Compiling module microSystem
+Compiling module microSystem_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 35 sub-compilation(s) to finish...
+Compiled 54 Verilog Units
+Built simulation executable D:/ISEProject/P8/microSystem_tb_isim_beh.exe
+Fuse Memory Usage: 37692 KB
+Fuse CPU Usage: 1827 ms

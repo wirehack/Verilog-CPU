@@ -1,0 +1,12 @@
+# Output products list for <signed_divider>
+_xmsgs\pn_parser.xmsgs
+signed_divider.asy
+signed_divider.gise
+signed_divider.ngc
+signed_divider.v
+signed_divider.veo
+signed_divider.xco
+signed_divider.xise
+signed_divider_flist.txt
+signed_divider_readme.txt
+signed_divider_xmdf.tcl

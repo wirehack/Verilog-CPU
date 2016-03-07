@@ -1,0 +1,415 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "datapath/ALU.v" in library work
+Module <ALU> compiled
+No errors in compilation
+Analysis of file <"ALU.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ALU> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ALU>.
+Module <ALU> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALU>.
+    Related source file is "datapath/ALU.v".
+WARNING:Xst:737 - Found 32-bit latch for signal <$old_S_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit addsub for signal <old_S_1$addsub0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ALU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 7.
+Latch _old_S_1_31 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_30 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_29 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_28 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_27 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_26 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_25 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_24 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_23 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_22 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_21 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_20 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_19 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_18 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_17 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_16 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_15 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_14 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_13 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_12 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_11 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_10 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_9 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_8 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_7 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_6 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_5 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_4 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_3 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_2 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch _old_S_1_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU.ngr
+Top Level Output File Name         : ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 99
+
+Cell Usage :
+# BELS                             : 211
+#      GND                         : 1
+#      LUT2                        : 2
+#      LUT4                        : 104
+#      MUXCY                       : 39
+#      MUXF5                       : 32
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 64
+#      LD                          : 64
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 99
+#      IBUF                        : 66
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa3s50vqg100-4 
+
+ Number of Slices:                       53  out of    768     6%  
+ Number of Slice Flip Flops:             32  out of   1536     2%  
+ Number of 4 input LUTs:                106  out of   1536     6%  
+ Number of IOs:                          99
+ Number of bonded IOBs:                  99  out of     63   157% (*) 
+    IOB Flip Flops:                      32
+ Number of GCLKs:                         1  out of      8    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)  | Load  |
+------------------------------------+------------------------+-------+
+old_S_1_not00011(old_S_1_not00011:O)| BUFG(*)(_old_S_1_0)    | 64    |
+------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 9.256ns
+   Maximum output required time after clock: 9.956ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'old_S_1_not00011'
+  Total number of paths / destination ports: 5856 / 64
+-------------------------------------------------------------------------
+Offset:              9.256ns (Levels of Logic = 35)
+  Source:            ALUOp<1> (PAD)
+  Destination:       _old_S_1_31 (LATCH)
+  Destination Clock: old_S_1_not00011 falling
+
+  Data Path: ALUOp<1> to _old_S_1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            98   0.821   2.570  ALUOp_1_IBUF (ALUOp_1_IBUF)
+     LUT2:I0->O            1   0.551   0.801  old_S_1_mux00002 (old_S_1_mux0000)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<0> (Maddsub_old_S_1_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<1> (Maddsub_old_S_1_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<2> (Maddsub_old_S_1_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<3> (Maddsub_old_S_1_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<4> (Maddsub_old_S_1_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<5> (Maddsub_old_S_1_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<6> (Maddsub_old_S_1_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<7> (Maddsub_old_S_1_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<8> (Maddsub_old_S_1_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<9> (Maddsub_old_S_1_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<10> (Maddsub_old_S_1_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<11> (Maddsub_old_S_1_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<12> (Maddsub_old_S_1_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<13> (Maddsub_old_S_1_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<14> (Maddsub_old_S_1_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<15> (Maddsub_old_S_1_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<16> (Maddsub_old_S_1_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<17> (Maddsub_old_S_1_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<18> (Maddsub_old_S_1_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<19> (Maddsub_old_S_1_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<20> (Maddsub_old_S_1_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<21> (Maddsub_old_S_1_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<22> (Maddsub_old_S_1_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<23> (Maddsub_old_S_1_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<24> (Maddsub_old_S_1_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<25> (Maddsub_old_S_1_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<26> (Maddsub_old_S_1_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<27> (Maddsub_old_S_1_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<28> (Maddsub_old_S_1_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<29> (Maddsub_old_S_1_addsub0000_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  Maddsub_old_S_1_addsub0000_cy<30> (Maddsub_old_S_1_addsub0000_cy<30>)
+     XORCY:CI->O           1   0.904   0.801  Maddsub_old_S_1_addsub0000_xor<31> (old_S_1_addsub0000<31>)
+     MUXF5:S->O            2   0.621   0.000  old_S_1_mux0001<31>_f5 (old_S_1_mux0001<31>)
+     LD:D                      0.203          _old_S_1_31
+    ----------------------------------------
+    Total                      9.256ns (5.084ns logic, 4.172ns route)
+                                       (54.9% logic, 45.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'old_S_1_not00011'
+  Total number of paths / destination ports: 64 / 33
+-------------------------------------------------------------------------
+Offset:              9.956ns (Levels of Logic = 10)
+  Source:            _old_S_1_8 (LATCH)
+  Destination:       Zero (PAD)
+  Source Clock:      old_S_1_not00011 falling
+
+  Data Path: _old_S_1_8 to Zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   1.140  _old_S_1_8 (_old_S_1_8)
+     LUT4:I0->O            1   0.551   0.000  Zero_cmp_eq0000_wg_lut<0> (Zero_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Zero_cmp_eq0000_wg_cy<0> (Zero_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Zero_cmp_eq0000_wg_cy<1> (Zero_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Zero_cmp_eq0000_wg_cy<2> (Zero_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Zero_cmp_eq0000_wg_cy<3> (Zero_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Zero_cmp_eq0000_wg_cy<4> (Zero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Zero_cmp_eq0000_wg_cy<5> (Zero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Zero_cmp_eq0000_wg_cy<6> (Zero_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.303   0.801  Zero_cmp_eq0000_wg_cy<7> (Zero_OBUF)
+     OBUF:I->O                 5.644          Zero_OBUF (Zero)
+    ----------------------------------------
+    Total                      9.956ns (8.015ns logic, 1.941ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.03 secs
+ 
+--> 
+
+Total memory usage is 286500 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

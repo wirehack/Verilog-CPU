@@ -1,0 +1,28 @@
+Command line:
+   multiplexer_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  11558
+
+Sat Oct 17 16:27:36 2015
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 846.856 Meg
+
+ Total Signals          : 21
+ Total Nets             : 21
+ Total Signal Drivers   : 13
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 25
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 109
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 846.856 Meg
+
+Sat Oct 17 16:28:01 2015
+

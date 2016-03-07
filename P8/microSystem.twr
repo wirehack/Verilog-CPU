@@ -1,0 +1,141 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n 3
+-fastpaths -xml microSystem.twx microSystem.ncd -o microSystem.twr
+microSystem.pcf -ucf PIN_Verified.ucf
+
+Design file:              microSystem.ncd
+Physical constraint file: microSystem.pcf
+Device,package,speed:     xc6slx150,fgg676,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sys_clk
+--------------+------------+------------+------------+------------+------------------+--------+
+              |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------+------------+------------------+--------+
+UART_RxD0     |   11.079(R)|      SLOW  |   -4.157(R)|      FAST  |clk               |   0.000|
+sys_rstn      |   22.732(R)|      SLOW  |   -2.732(R)|      FAST  |clk               |   0.000|
+user0_dipsw<0>|   11.217(R)|      SLOW  |   -5.792(R)|      FAST  |clk               |   0.000|
+user0_dipsw<1>|   11.998(R)|      SLOW  |   -6.135(R)|      FAST  |clk               |   0.000|
+user0_dipsw<2>|   11.686(R)|      SLOW  |   -6.143(R)|      FAST  |clk               |   0.000|
+user0_dipsw<3>|   12.024(R)|      SLOW  |   -6.240(R)|      FAST  |clk               |   0.000|
+user0_dipsw<4>|    8.249(R)|      SLOW  |   -3.990(R)|      FAST  |clk               |   0.000|
+user0_dipsw<5>|   12.061(R)|      SLOW  |   -6.286(R)|      FAST  |clk               |   0.000|
+user0_dipsw<6>|   11.264(R)|      SLOW  |   -5.883(R)|      FAST  |clk               |   0.000|
+user0_dipsw<7>|   11.780(R)|      SLOW  |   -6.211(R)|      FAST  |clk               |   0.000|
+user1_dipsw<0>|   11.851(R)|      SLOW  |   -6.189(R)|      FAST  |clk               |   0.000|
+user1_dipsw<1>|   11.247(R)|      SLOW  |   -5.799(R)|      FAST  |clk               |   0.000|
+user1_dipsw<2>|   11.159(R)|      SLOW  |   -5.727(R)|      FAST  |clk               |   0.000|
+user1_dipsw<3>|   10.647(R)|      SLOW  |   -5.348(R)|      FAST  |clk               |   0.000|
+user1_dipsw<4>|   10.961(R)|      SLOW  |   -5.658(R)|      FAST  |clk               |   0.000|
+user1_dipsw<5>|    9.836(R)|      SLOW  |   -4.955(R)|      FAST  |clk               |   0.000|
+user1_dipsw<6>|   11.428(R)|      SLOW  |   -5.839(R)|      FAST  |clk               |   0.000|
+user1_dipsw<7>|   10.611(R)|      SLOW  |   -5.412(R)|      FAST  |clk               |   0.000|
+user2_dipsw<0>|    9.058(R)|      SLOW  |   -4.562(R)|      FAST  |clk               |   0.000|
+user2_dipsw<1>|    9.563(R)|      SLOW  |   -4.922(R)|      FAST  |clk               |   0.000|
+user2_dipsw<2>|    8.639(R)|      SLOW  |   -4.368(R)|      FAST  |clk               |   0.000|
+user2_dipsw<3>|    8.749(R)|      SLOW  |   -4.337(R)|      FAST  |clk               |   0.000|
+user2_dipsw<4>|    7.846(R)|      SLOW  |   -3.959(R)|      FAST  |clk               |   0.000|
+user2_dipsw<5>|    8.981(R)|      SLOW  |   -4.507(R)|      FAST  |clk               |   0.000|
+user2_dipsw<6>|    7.613(R)|      SLOW  |   -3.737(R)|      FAST  |clk               |   0.000|
+user2_dipsw<7>|    6.400(R)|      SLOW  |   -3.009(R)|      FAST  |clk               |   0.000|
+user3_dipsw<0>|    7.103(R)|      SLOW  |   -3.418(R)|      FAST  |clk               |   0.000|
+user3_dipsw<1>|    7.013(R)|      SLOW  |   -3.410(R)|      FAST  |clk               |   0.000|
+user3_dipsw<2>|    6.387(R)|      SLOW  |   -3.007(R)|      FAST  |clk               |   0.000|
+user3_dipsw<3>|    7.756(R)|      SLOW  |   -3.843(R)|      FAST  |clk               |   0.000|
+user3_dipsw<4>|    6.856(R)|      SLOW  |   -3.299(R)|      FAST  |clk               |   0.000|
+user3_dipsw<5>|    6.718(R)|      SLOW  |   -3.171(R)|      FAST  |clk               |   0.000|
+user3_dipsw<6>|    7.777(R)|      SLOW  |   -3.871(R)|      FAST  |clk               |   0.000|
+user3_dipsw<7>|    7.900(R)|      SLOW  |   -3.904(R)|      FAST  |clk               |   0.000|
+--------------+------------+------------+------------+------------+------------------+--------+
+
+Clock sys_clk to Pad
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination    |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+UART_TxD0      |        14.751(R)|      SLOW  |         8.040(R)|      FAST  |clk               |   0.000|
+seg4x7_1_a     |        18.050(R)|      SLOW  |         9.354(R)|      FAST  |clk               |   0.000|
+seg4x7_1_b     |        17.915(R)|      SLOW  |         9.366(R)|      FAST  |clk               |   0.000|
+seg4x7_1_c     |        17.125(R)|      SLOW  |         8.716(R)|      FAST  |clk               |   0.000|
+seg4x7_1_d     |        17.501(R)|      SLOW  |         8.987(R)|      FAST  |clk               |   0.000|
+seg4x7_1_e     |        17.518(R)|      SLOW  |         9.041(R)|      FAST  |clk               |   0.000|
+seg4x7_1_f     |        17.767(R)|      SLOW  |         9.202(R)|      FAST  |clk               |   0.000|
+seg4x7_1_g     |        16.840(R)|      SLOW  |         8.601(R)|      FAST  |clk               |   0.000|
+seg4x7_1_sel<1>|        19.152(R)|      SLOW  |        10.627(R)|      FAST  |clk               |   0.000|
+seg4x7_1_sel<2>|        13.200(R)|      SLOW  |         7.024(R)|      FAST  |clk               |   0.000|
+seg4x7_1_sel<3>|        20.312(R)|      SLOW  |        11.274(R)|      FAST  |clk               |   0.000|
+seg4x7_1_sel<4>|        20.123(R)|      SLOW  |        11.103(R)|      FAST  |clk               |   0.000|
+seg4x7_2_a     |        16.229(R)|      SLOW  |         8.540(R)|      FAST  |clk               |   0.000|
+seg4x7_2_b     |        17.252(R)|      SLOW  |         9.026(R)|      FAST  |clk               |   0.000|
+seg4x7_2_c     |        17.154(R)|      SLOW  |         8.984(R)|      FAST  |clk               |   0.000|
+seg4x7_2_d     |        16.596(R)|      SLOW  |         8.693(R)|      FAST  |clk               |   0.000|
+seg4x7_2_e     |        16.559(R)|      SLOW  |         8.701(R)|      FAST  |clk               |   0.000|
+seg4x7_2_f     |        16.597(R)|      SLOW  |         8.720(R)|      FAST  |clk               |   0.000|
+seg4x7_2_g     |        17.184(R)|      SLOW  |         8.965(R)|      FAST  |clk               |   0.000|
+seg4x7_2_sel<1>|        13.439(R)|      SLOW  |         7.184(R)|      FAST  |clk               |   0.000|
+seg4x7_2_sel<2>|        14.257(R)|      SLOW  |         7.373(R)|      FAST  |clk               |   0.000|
+seg4x7_2_sel<3>|        14.280(R)|      SLOW  |         7.689(R)|      FAST  |clk               |   0.000|
+seg4x7_2_sel<4>|        14.429(R)|      SLOW  |         7.754(R)|      FAST  |clk               |   0.000|
+user_led<0>    |         9.545(R)|      SLOW  |         4.964(R)|      FAST  |clk               |   0.000|
+user_led<1>    |        10.594(R)|      SLOW  |         5.563(R)|      FAST  |clk               |   0.000|
+user_led<2>    |        10.613(R)|      SLOW  |         5.576(R)|      FAST  |clk               |   0.000|
+user_led<3>    |        10.662(R)|      SLOW  |         5.612(R)|      FAST  |clk               |   0.000|
+user_led<4>    |        10.357(R)|      SLOW  |         5.453(R)|      FAST  |clk               |   0.000|
+user_led<5>    |        11.038(R)|      SLOW  |         5.794(R)|      FAST  |clk               |   0.000|
+user_led<6>    |        10.466(R)|      SLOW  |         5.449(R)|      FAST  |clk               |   0.000|
+user_led<7>    |        11.087(R)|      SLOW  |         5.900(R)|      FAST  |clk               |   0.000|
+user_led<8>    |        10.991(R)|      SLOW  |         5.826(R)|      FAST  |clk               |   0.000|
+user_led<9>    |        11.034(R)|      SLOW  |         5.831(R)|      FAST  |clk               |   0.000|
+user_led<10>   |        10.102(R)|      SLOW  |         5.316(R)|      FAST  |clk               |   0.000|
+user_led<11>   |        10.696(R)|      SLOW  |         5.657(R)|      FAST  |clk               |   0.000|
+user_led<12>   |        10.393(R)|      SLOW  |         5.496(R)|      FAST  |clk               |   0.000|
+user_led<13>   |        11.019(R)|      SLOW  |         5.870(R)|      FAST  |clk               |   0.000|
+user_led<14>   |        11.059(R)|      SLOW  |         5.882(R)|      FAST  |clk               |   0.000|
+user_led<15>   |        10.542(R)|      SLOW  |         5.631(R)|      FAST  |clk               |   0.000|
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |   39.521|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Dec 29 23:08:25 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 472 MB
+
+
+

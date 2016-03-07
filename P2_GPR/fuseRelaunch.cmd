@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/ISEProject/P2_GPR/GPR_tb_isim_beh.exe" -prj "D:/ISEProject/P2_GPR/GPR_tb_beh.prj" "work.GPR_tb" "work.glbl" 

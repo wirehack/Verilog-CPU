@@ -1,0 +1,5 @@
+set -tmpdir "D:/ISEProject/P7/xst/projnav.tmp"
+set -xsthdpdir "D:/ISEProject/P7/xst"
+elaborate
+-ifn bridge.prj
+-ifmt mixed

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ISEProject\P8\microSystem.ncd
+OUTFILE=D:\ISEProject\P8\microSystem.bit
+FAMILY=Spartan6
+PART=xc6slx150-2fgg676
+WORKINGDIR=D:\ISEProject\P8
+LICENSE=ISE
+USER_INFO=__0_0_0

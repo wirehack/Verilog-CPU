@@ -1,0 +1,70 @@
+Running: D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/ISEProject/P7/microSystem_tb_isim_beh.exe -prj D:/ISEProject/P7/microSystem_tb_beh.prj work.microSystem_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/ISEProject/P7/datapath/pc.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/npc.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/mux.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/multDiv.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/MEM_WB.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/Load_ext.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/im.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/IF_ID.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/ID_EX.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/GPR.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/EX_MEM.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/ext.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/dm.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/CMP.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/C0.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/BE.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/ALU.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/control/hazard.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/control/forwarding.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/control/ctrl.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/mips.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/COCOTimer.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/bridge.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/microSystem.v" into library work
+Analyzing Verilog file "D:/ISEProject/P7/datapath/microSystem_tb.v" into library work
+Analyzing Verilog file "D:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/ISEProject/P7/mips.v" Line 163: Port d5 is not connected to this instance
+Completed static elaboration
+Compiling module pc
+Compiling module im_8k
+Compiling module mux_32bit_6
+Compiling module IF_ID
+Compiling module ctrl
+Compiling module hazard
+Compiling module npc
+Compiling module ext
+Compiling module GPR
+Compiling module mux_32bit_5
+Compiling module CMP
+Compiling module ID_EX
+Compiling module forwarding
+Compiling module mux_32bit_7
+Compiling module mux_32bit_2
+Compiling module mux_5bit_3
+Compiling module multDiv
+Compiling module ALU
+Compiling module EX_MEM
+Compiling module BE_EN
+Compiling module dm_8k
+Compiling module CP0
+Compiling module MEM_WB
+Compiling module Load_ext
+Compiling module mips
+Compiling module bridge
+Compiling module COCOTimer
+Compiling module microSystem
+Compiling module microSystem_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 23 sub-compilation(s) to finish...
+Compiled 30 Verilog Units
+Built simulation executable D:/ISEProject/P7/microSystem_tb_isim_beh.exe
+Fuse Memory Usage: 34972 KB
+Fuse CPU Usage: 1140 ms

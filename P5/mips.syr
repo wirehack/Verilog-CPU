@@ -1,0 +1,1074 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "datapath/ext.v" in library work
+Compiling verilog file "datapath/pc.v" in library work
+Module <ext> compiled
+Compiling verilog file "datapath/npc.v" in library work
+Module <pc> compiled
+Compiling verilog file "datapath/mux.v" in library work
+Module <npc> compiled
+Module <mux_5bit_3> compiled
+Module <mux_32bit_2> compiled
+Compiling verilog file "datapath/MEM_WB.v" in library work
+Module <mux_32bit_3> compiled
+Compiling verilog file "datapath/im.v" in library work
+Module <MEM_WB> compiled
+Compiling verilog file "datapath/IF_ID.v" in library work
+Module <im_1k> compiled
+Compiling verilog file "datapath/ID_EX.v" in library work
+Module <IF_ID> compiled
+Compiling verilog file "datapath/GPR.v" in library work
+Module <ID_EX> compiled
+Compiling verilog file "datapath/forwarding.v" in library work
+Module <GPR> compiled
+Compiling verilog file "datapath/EX_MEM.v" in library work
+Module <forwarding> compiled
+Compiling verilog file "datapath/dm.v" in library work
+Module <EX_MEM> compiled
+Compiling verilog file "datapath/ALU.v" in library work
+Module <dm_4k> compiled
+Compiling verilog file "control/ctrl.v" in library work
+Module <ALU> compiled
+Compiling verilog file "mips.v" in library work
+Module <ctrl> compiled
+Module <mips> compiled
+No errors in compilation
+Analysis of file <"mips.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mips> in library <work>.
+
+Analyzing hierarchy for module <pc> in library <work>.
+
+Analyzing hierarchy for module <im_1k> in library <work>.
+
+Analyzing hierarchy for module <mux_32bit_3> in library <work>.
+
+Analyzing hierarchy for module <IF_ID> in library <work>.
+
+Analyzing hierarchy for module <ctrl> in library <work>.
+
+Analyzing hierarchy for module <npc> in library <work>.
+
+Analyzing hierarchy for module <ext> in library <work>.
+
+Analyzing hierarchy for module <GPR> in library <work>.
+
+Analyzing hierarchy for module <ID_EX> in library <work>.
+
+Analyzing hierarchy for module <forwarding> in library <work>.
+
+Analyzing hierarchy for module <mux_32bit_2> in library <work>.
+
+Analyzing hierarchy for module <mux_5bit_3> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work>.
+
+Analyzing hierarchy for module <EX_MEM> in library <work>.
+
+Analyzing hierarchy for module <dm_4k> in library <work>.
+
+Analyzing hierarchy for module <MEM_WB> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mips>.
+Module <mips> is correct for synthesis.
+ 
+Analyzing module <pc> in library <work>.
+Module <pc> is correct for synthesis.
+ 
+Analyzing module <im_1k> in library <work>.
+INFO:Xst:2546 - "datapath/im.v" line 30: reading initialization file "code.txt".
+Module <im_1k> is correct for synthesis.
+ 
+Analyzing module <mux_32bit_3> in library <work>.
+Module <mux_32bit_3> is correct for synthesis.
+ 
+Analyzing module <IF_ID> in library <work>.
+Module <IF_ID> is correct for synthesis.
+ 
+Analyzing module <ctrl> in library <work>.
+Module <ctrl> is correct for synthesis.
+ 
+Analyzing module <npc> in library <work>.
+Module <npc> is correct for synthesis.
+ 
+Analyzing module <ext> in library <work>.
+Module <ext> is correct for synthesis.
+ 
+Analyzing module <GPR> in library <work>.
+Module <GPR> is correct for synthesis.
+ 
+Analyzing module <ID_EX> in library <work>.
+Module <ID_EX> is correct for synthesis.
+ 
+Analyzing module <forwarding> in library <work>.
+Module <forwarding> is correct for synthesis.
+ 
+Analyzing module <mux_32bit_2> in library <work>.
+Module <mux_32bit_2> is correct for synthesis.
+ 
+Analyzing module <mux_5bit_3> in library <work>.
+Module <mux_5bit_3> is correct for synthesis.
+ 
+Analyzing module <ALU> in library <work>.
+Module <ALU> is correct for synthesis.
+ 
+Analyzing module <EX_MEM> in library <work>.
+Module <EX_MEM> is correct for synthesis.
+ 
+Analyzing module <dm_4k> in library <work>.
+Module <dm_4k> is correct for synthesis.
+ 
+Analyzing module <MEM_WB> in library <work>.
+Module <MEM_WB> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <GPR> has a constant value of 100000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <pc>.
+    Related source file is "datapath/pc.v".
+    Found 32-bit register for signal <pcAddr>.
+Unit <pc> synthesized.
+
+
+Synthesizing Unit <im_1k>.
+    Related source file is "datapath/im.v".
+WARNING:Xst:1781 - Signal <im> is used but never assigned. Tied to default value.
+    Found 256x32-bit ROM for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <im_1k> synthesized.
+
+
+Synthesizing Unit <mux_32bit_3>.
+    Related source file is "datapath/mux.v".
+WARNING:Xst:737 - Found 32-bit latch for signal <dout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit 3-to-1 multiplexer for signal <dout$mux0000>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <mux_32bit_3> synthesized.
+
+
+Synthesizing Unit <IF_ID>.
+    Related source file is "datapath/IF_ID.v".
+    Found 64-bit register for signal <if_id>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <IF_ID> synthesized.
+
+
+Synthesizing Unit <ctrl>.
+    Related source file is "control/ctrl.v".
+WARNING:Xst:647 - Input <func<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <func<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <func<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:643 - "control/ctrl.v" line 36: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 40: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 45: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 46: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 47: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 44: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 37: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 36: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 37: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 47: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 37: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 43: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 43: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 44: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 48: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 41: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 46: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 46: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 47: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 47: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 44: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 38: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "control/ctrl.v" line 47: The result of a 1x1-bit multiplication is partially used. Only the 1 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit adder for signal <ALUOp<0>>.
+    Found 1-bit adder for signal <ALUSrc>.
+    Found 1-bit adder for signal <ALUOp_0$addsub0000> created at line 47.
+    Found 1-bit adder for signal <ALUOp_0$addsub0001> created at line 47.
+    Found 1x1-bit multiplier for signal <ALUOp_0$mult0000> created at line 47.
+    Found 1x1-bit multiplier for signal <ALUOp_0$mult0001> created at line 47.
+    Found 1x1-bit multiplier for signal <ALUOp_0$mult0002> created at line 47.
+    Found 1x1-bit multiplier for signal <ALUOp_0$mult0003> created at line 47.
+    Found 1x1-bit multiplier for signal <ALUOp_0$mult0004> created at line 47.
+    Found 1-bit adder for signal <ALUOp_1$addsub0000> created at line 46.
+    Found 1x1-bit multiplier for signal <ALUOp_1$mult0000> created at line 46.
+    Found 1x1-bit multiplier for signal <ALUOp_1$mult0001> created at line 46.
+    Found 1x1-bit multiplier for signal <ALUOp_1$mult0002> created at line 46.
+    Found 1-bit adder for signal <ALUSrc$addsub0000> created at line 38.
+    Found 1-bit adder for signal <ALUSrc$addsub0001> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0000> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0002> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0003> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0004> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0005> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0006> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0007> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0008> created at line 38.
+    Found 1x1-bit multiplier for signal <ALUSrc$mult0009> created at line 38.
+    Found 1x1-bit multiplier for signal <ExtOp_0$mult0000> created at line 45.
+    Found 1x1-bit multiplier for signal <ExtOp_1$mult0001> created at line 44.
+    Found 1x1-bit multiplier for signal <ExtOp_1$mult0002> created at line 44.
+    Found 1x1-bit multiplier for signal <ExtOp_1$mult0003> created at line 44.
+    Found 1x1-bit multiplier for signal <IfBeq$mult0000> created at line 43.
+    Found 1x1-bit multiplier for signal <IfBeq$mult0001> created at line 43.
+    Found 1x1-bit multiplier for signal <jr$mult0000> created at line 48.
+    Found 1x1-bit multiplier for signal <MemtoReg_1$mult0000> created at line 40.
+    Found 1x1-bit multiplier for signal <RegDst_0$mult0000> created at line 36.
+    Found 1x1-bit multiplier for signal <RegDst_0$mult0001> created at line 36.
+    Found 1x1-bit multiplier for signal <RegDst_1$mult0002> created at line 37.
+    Found 1x1-bit multiplier for signal <RegDst_1$mult0003> created at line 37.
+    Found 1x1-bit multiplier for signal <RegDst_1$mult0004> created at line 37.
+    Found 1-bit adder for signal <RegWrite$addsub0000> created at line 41.
+    Found 1-bit adder for signal <RegWrite$addsub0001> created at line 41.
+    Found 1-bit adder for signal <RegWrite$addsub0002> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0000> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0001> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0003> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0004> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0005> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0006> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0007> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0008> created at line 41.
+    Found 1x1-bit multiplier for signal <RegWrite$mult0009> created at line 41.
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  39 Multiplier(s).
+Unit <ctrl> synthesized.
+
+
+Synthesizing Unit <ext>.
+    Related source file is "datapath/ext.v".
+WARNING:Xst:737 - Found 32-bit latch for signal <imm32>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit 3-to-1 multiplexer for signal <imm32$mux0000>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <ext> synthesized.
+
+
+Synthesizing Unit <GPR>.
+    Related source file is "datapath/GPR.v".
+    Found 32-bit 32-to-1 multiplexer for signal <RData1>.
+    Found 32-bit 32-to-1 multiplexer for signal <RData2>.
+    Found 1024-bit register for signal <register>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <register>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+Unit <GPR> synthesized.
+
+
+Synthesizing Unit <ID_EX>.
+    Related source file is "datapath/ID_EX.v".
+    Found 152-bit register for signal <id_ex>.
+    Summary:
+	inferred 152 D-type flip-flop(s).
+Unit <ID_EX> synthesized.
+
+
+Synthesizing Unit <forwarding>.
+    Related source file is "datapath/forwarding.v".
+    Found 5-bit comparator equal for signal <forwardA$cmp_eq0000> created at line 41.
+    Found 5-bit comparator equal for signal <forwardA$cmp_eq0001> created at line 43.
+    Found 5-bit comparator equal for signal <forwardB$cmp_eq0000> created at line 47.
+    Found 5-bit comparator equal for signal <forwardB$cmp_eq0001> created at line 49.
+    Found 5-bit comparator equal for signal <forwardC$cmp_eq0000> created at line 53.
+    Found 5-bit comparator equal for signal <forwardD$cmp_eq0000> created at line 58.
+    Found 5-bit comparator equal for signal <forwardD$cmp_eq0001> created at line 60.
+    Found 5-bit comparator equal for signal <forwardE$cmp_eq0000> created at line 64.
+    Found 5-bit comparator equal for signal <forwardE$cmp_eq0001> created at line 66.
+    Summary:
+	inferred   9 Comparator(s).
+Unit <forwarding> synthesized.
+
+
+Synthesizing Unit <mux_32bit_2>.
+    Related source file is "datapath/mux.v".
+Unit <mux_32bit_2> synthesized.
+
+
+Synthesizing Unit <mux_5bit_3>.
+    Related source file is "datapath/mux.v".
+WARNING:Xst:737 - Found 5-bit latch for signal <dout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 5-bit 3-to-1 multiplexer for signal <dout$mux0000>.
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <mux_5bit_3> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "datapath/ALU.v".
+WARNING:Xst:737 - Found 32-bit latch for signal <S>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit addsub for signal <S$addsub0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <EX_MEM>.
+    Related source file is "datapath/EX_MEM.v".
+    Found 105-bit register for signal <ex_mem>.
+    Summary:
+	inferred 105 D-type flip-flop(s).
+Unit <EX_MEM> synthesized.
+
+
+Synthesizing Unit <dm_4k>.
+    Related source file is "datapath/dm.v".
+    Found 1024x32-bit single-port RAM <Mram_dm> for signal <dm>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <dm_4k> synthesized.
+
+
+Synthesizing Unit <MEM_WB>.
+    Related source file is "datapath/MEM_WB.v".
+    Found 104-bit register for signal <mem_wb>.
+    Summary:
+	inferred 104 D-type flip-flop(s).
+Unit <MEM_WB> synthesized.
+
+
+Synthesizing Unit <npc>.
+    Related source file is "datapath/npc.v".
+    Found 32-bit 4-to-1 multiplexer for signal <npc>.
+    Found 32-bit adder for signal <npc$add0000> created at line 40.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <npc> synthesized.
+
+
+Synthesizing Unit <mips>.
+    Related source file is "mips.v".
+    Found 32-bit adder for signal <pc4>.
+    Found 32-bit comparator equal for signal <zero$cmp_eq0000> created at line 90.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <mips> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port RAM                           : 1
+# ROMs                                                 : 1
+ 256x32-bit ROM                                        : 1
+# Multipliers                                          : 39
+ 1x1-bit multiplier                                    : 39
+# Adders/Subtractors                                   : 13
+ 1-bit adder                                           : 10
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 100
+ 1-bit register                                        : 64
+ 104-bit register                                      : 1
+ 105-bit register                                      : 1
+ 152-bit register                                      : 1
+ 32-bit register                                       : 33
+# Latches                                              : 10
+ 32-bit latch                                          : 9
+ 5-bit latch                                           : 1
+# Comparators                                          : 10
+ 32-bit comparator equal                               : 1
+ 5-bit comparator equal                                : 9
+# Multiplexers                                         : 12
+ 32-bit 3-to-1 multiplexer                             : 8
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 5-bit 3-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <pc_in> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <im> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <pc_mux> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <if_id_reg> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <control> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <nextPC> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <extender> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpr> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fwD> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fwE> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <id_ex_reg> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <forwarding_unit> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fwA> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fwB> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux_alu> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux_wreg> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <alu> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ex_mem_reg> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fwC> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <dm> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mem_wb_reg> is unconnected in block <mips>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux_wregdata> is unconnected in block <mips>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <mips>.
+INFO:Xst:3226 - The RAM <dm/Mram_dm> will be implemented as a BLOCK RAM, absorbing the following register(s): <mem_wb_reg/mem_wb>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <ex_mem<101>>   | high     |
+    |     addrA          | connected to signal <ex_mem>        |          |
+    |     diA            | connected to signal <din_fwC>       |          |
+    |     doA            | connected to signal <mem_wb>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <mips> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port block RAM                     : 1
+# ROMs                                                 : 1
+ 256x32-bit ROM                                        : 1
+# Multipliers                                          : 39
+ 1x1-bit multiplier                                    : 39
+# Adders/Subtractors                                   : 10
+ 1-bit adder                                           : 4
+ 1-bit adder carry in                                  : 3
+ 30-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 1449
+ Flip-Flops                                            : 1449
+# Latches                                              : 10
+ 32-bit latch                                          : 9
+ 5-bit latch                                           : 1
+# Comparators                                          : 10
+ 32-bit comparator equal                               : 1
+ 5-bit comparator equal                                : 9
+# Multiplexers                                         : 74
+ 1-bit 32-to-1 multiplexer                             : 64
+ 32-bit 3-to-1 multiplexer                             : 8
+ 32-bit 4-to-1 multiplexer                             : 1
+ 5-bit 3-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mips> ...
+WARNING:Xst:1294 - Latch <pc_mux/dout_0> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_1> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_2> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_3> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_4> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_5> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_6> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_7> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_8> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_9> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_10> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_11> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_12> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_13> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_14> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_15> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_16> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_17> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_18> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_19> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_20> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_21> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_22> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_23> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_24> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_25> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_26> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_27> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_28> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_29> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_30> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_31> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_0> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_1> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_2> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_3> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_4> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_5> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_6> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_7> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_8> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_9> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_10> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_11> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_12> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_13> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_14> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_15> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_16> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_17> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_18> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_19> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_20> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_21> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_22> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_23> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_24> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_25> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_26> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_27> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_28> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_29> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_30> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <pc_mux/dout_31> is equivalent to a wire in block <mips>.
+
+Optimizing unit <IF_ID> ...
+
+Optimizing unit <ctrl> ...
+
+Optimizing unit <GPR> ...
+
+Optimizing unit <ID_EX> ...
+
+Optimizing unit <forwarding> ...
+
+Optimizing unit <ext> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:1710 - FF/Latch <nextPC/npc_extender/imm32_9> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nextPC/npc_extender/imm32_8> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nextPC/npc_extender/imm32_7> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <extender/imm32_9> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <extender/imm32_8> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <extender/imm32_7> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <if_id_reg/if_id_39> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <if_id_reg/if_id_40> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <if_id_reg/if_id_41> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <if_id_reg/if_id_62> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <id_ex_reg/id_ex_56> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <id_ex_reg/id_ex_55> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <id_ex_reg/id_ex_54> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <nextPC/npc_extender/imm32_31> of sequential type is unconnected in block <mips>.
+WARNING:Xst:2677 - Node <nextPC/npc_extender/imm32_30> of sequential type is unconnected in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_29> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_28> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_27> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_26> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_25> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_24> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_23> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_22> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_21> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_20> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_19> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_18> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_17> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_16> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_15> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_14> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_13> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_12> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_11> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_10> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_6> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_5> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_4> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_3> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_2> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_1> is equivalent to a wire in block <mips>.
+WARNING:Xst:1294 - Latch <nextPC/npc_extender/imm32_0> is equivalent to a wire in block <mips>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <id_ex_reg/id_ex_151> in Unit <mips> is equivalent to the following FF/Latch, which will be removed : <id_ex_reg/id_ex_144> 
+INFO:Xst:2261 - The FF/Latch <extender/imm32_25> in Unit <mips> is equivalent to the following 2 FFs/Latches, which will be removed : <extender/imm32_24> <extender/imm32_23> 
+INFO:Xst:2261 - The FF/Latch <id_ex_reg/id_ex_72> in Unit <mips> is equivalent to the following 2 FFs/Latches, which will be removed : <id_ex_reg/id_ex_71> <id_ex_reg/id_ex_70> 
+Found area constraint ratio of 100 (+ 5) on block mips, actual ratio is 208.
+Optimizing block <mips> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <mips>, final ratio is 205.
+FlipFlop if_id_reg/if_id_58 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <mips> :
+	Found 2-bit shift register for signal <ex_mem<101>>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_71>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_70>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_69>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_68>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_67>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_66>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_65>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_64>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_63>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_62>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_61>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_60>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_59>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_58>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_57>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_56>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_55>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_54>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_53>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_52>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_51>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_50>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_49>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_48>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_47>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_46>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_45>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_44>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_43>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_42>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_41>.
+	Found 3-bit shift register for signal <mem_wb_reg/mem_wb_sliced_40>.
+	Found 2-bit shift register for signal <mem_wb_reg/mem_wb_sliced_1>.
+	Found 2-bit shift register for signal <mem_wb_reg/mem_wb_sliced_0>.
+Unit <mips> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1338
+ Flip-Flops                                            : 1338
+# Shift Registers                                      : 35
+ 2-bit shift register                                  : 3
+ 3-bit shift register                                  : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mips.ngr
+Top Level Output File Name         : mips
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+# BELS                             : 3258
+#      GND                         : 3
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT2                        : 106
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 1199
+#      LUT3_D                      : 5
+#      LUT3_L                      : 4
+#      LUT4                        : 589
+#      LUT4_D                      : 13
+#      LUT4_L                      : 28
+#      MUXCY                       : 105
+#      MUXF5                       : 630
+#      MUXF6                       : 256
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+#      VCC                         : 1
+#      XORCY                       : 92
+# FlipFlops/Latches                : 1597
+#      FD                          : 256
+#      FDCE                        : 1054
+#      FDCP                        : 61
+#      FDPE                        : 2
+#      LD                          : 32
+#      LD_1                        : 192
+# RAMS                             : 2
+#      RAMB16                      : 2
+# Shift Registers                  : 35
+#      SRL16                       : 35
+# Clock Buffers                    : 7
+#      BUFG                        : 6
+#      BUFGP                       : 1
+# IO Buffers                       : 1
+#      IBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa3s50vqg100-4 
+
+ Number of Slices:                     1582  out of    768   205% (*) 
+ Number of Slice Flip Flops:           1597  out of   1536   103% (*) 
+ Number of 4 input LUTs:               2014  out of   1536   131% (*) 
+    Number used as logic:              1979
+    Number used as Shift registers:      35
+ Number of IOs:                           2
+ Number of bonded IOBs:                   2  out of     63     3%  
+ Number of BRAMs:                         2  out of      4    50%  
+ Number of GCLKs:                         7  out of      8    87%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------+-----------------------------+-------+
+Clock Signal                                                  | Clock buffer(FF name)       | Load  |
+--------------------------------------------------------------+-----------------------------+-------+
+clk                                                           | BUFGP                       | 1410  |
+mux_wreg/dout_cmp_eq0000(mux_wreg/dout_cmp_eq00001:O)         | NONE(*)(mux_wreg/dout_4)    | 5     |
+fwD/dout_cmp_eq00001(fwD/dout_cmp_eq00001:O)                  | BUFG(*)(fwD/dout_0)         | 32    |
+fwE/dout_cmp_eq00001(fwE/dout_cmp_eq00001:O)                  | BUFG(*)(fwE/dout_0)         | 32    |
+fwA/dout_cmp_eq00001(fwA/dout_cmp_eq00001:O)                  | BUFG(*)(fwA/dout_0)         | 32    |
+fwB/dout_cmp_eq00001(fwB/dout_cmp_eq00001:O)                  | BUFG(*)(fwB/dout_0)         | 32    |
+mux_wregdata/dout_cmp_eq00001(mux_wregdata/dout_cmp_eq00001:O)| BUFG(*)(mux_wregdata/dout_0)| 32    |
+N0                                                            | NONE(extender/imm32_31)     | 27    |
+alu/S_not00011(alu/S_not00011:O)                              | BUFG(*)(alu/S_31)           | 32    |
+--------------------------------------------------------------+-----------------------------+-------+
+(*) These 7 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------+-------------------------+-------+
+Control Signal                                           | Buffer(FF name)         | Load  |
+---------------------------------------------------------+-------------------------+-------+
+rst                                                      | IBUF                    | 1085  |
+N0(XST_GND:G)                                            | NONE(if_id_reg/if_id_32)| 29    |
+if_id_reg/if_id_0_and0000(if_id_reg/if_id_0_and00001:O)  | NONE(if_id_reg/if_id_0) | 1     |
+if_id_reg/if_id_0_and0001(if_id_reg/if_id_0_and00011:O)  | NONE(if_id_reg/if_id_0) | 1     |
+if_id_reg/if_id_10_and0000(if_id_reg/if_id_10_and00001:O)| NONE(if_id_reg/if_id_10)| 1     |
+if_id_reg/if_id_10_and0001(if_id_reg/if_id_10_and00011:O)| NONE(if_id_reg/if_id_10)| 1     |
+if_id_reg/if_id_11_and0000(if_id_reg/if_id_11_and00001:O)| NONE(if_id_reg/if_id_11)| 1     |
+if_id_reg/if_id_11_and0001(if_id_reg/if_id_11_and00011:O)| NONE(if_id_reg/if_id_11)| 1     |
+if_id_reg/if_id_12_and0000(if_id_reg/if_id_12_and00001:O)| NONE(if_id_reg/if_id_12)| 1     |
+if_id_reg/if_id_12_and0001(if_id_reg/if_id_12_and00011:O)| NONE(if_id_reg/if_id_12)| 1     |
+if_id_reg/if_id_13_and0000(if_id_reg/if_id_13_and00001:O)| NONE(if_id_reg/if_id_13)| 1     |
+if_id_reg/if_id_13_and0001(if_id_reg/if_id_13_and00011:O)| NONE(if_id_reg/if_id_13)| 1     |
+if_id_reg/if_id_14_and0000(if_id_reg/if_id_14_and00001:O)| NONE(if_id_reg/if_id_14)| 1     |
+if_id_reg/if_id_14_and0001(if_id_reg/if_id_14_and00011:O)| NONE(if_id_reg/if_id_14)| 1     |
+if_id_reg/if_id_15_and0000(if_id_reg/if_id_15_and00001:O)| NONE(if_id_reg/if_id_15)| 1     |
+if_id_reg/if_id_15_and0001(if_id_reg/if_id_15_and00011:O)| NONE(if_id_reg/if_id_15)| 1     |
+if_id_reg/if_id_16_and0000(if_id_reg/if_id_16_and00001:O)| NONE(if_id_reg/if_id_16)| 1     |
+if_id_reg/if_id_16_and0001(if_id_reg/if_id_16_and00011:O)| NONE(if_id_reg/if_id_16)| 1     |
+if_id_reg/if_id_17_and0000(if_id_reg/if_id_17_and00001:O)| NONE(if_id_reg/if_id_17)| 1     |
+if_id_reg/if_id_17_and0001(if_id_reg/if_id_17_and00011:O)| NONE(if_id_reg/if_id_17)| 1     |
+if_id_reg/if_id_18_and0000(if_id_reg/if_id_18_and00001:O)| NONE(if_id_reg/if_id_18)| 1     |
+if_id_reg/if_id_18_and0001(if_id_reg/if_id_18_and00011:O)| NONE(if_id_reg/if_id_18)| 1     |
+if_id_reg/if_id_19_and0000(if_id_reg/if_id_19_and00001:O)| NONE(if_id_reg/if_id_19)| 1     |
+if_id_reg/if_id_19_and0001(if_id_reg/if_id_19_and00011:O)| NONE(if_id_reg/if_id_19)| 1     |
+if_id_reg/if_id_1_and0000(if_id_reg/if_id_1_and00001:O)  | NONE(if_id_reg/if_id_1) | 1     |
+if_id_reg/if_id_1_and0001(if_id_reg/if_id_1_and00011:O)  | NONE(if_id_reg/if_id_1) | 1     |
+if_id_reg/if_id_20_and0000(if_id_reg/if_id_20_and00001:O)| NONE(if_id_reg/if_id_20)| 1     |
+if_id_reg/if_id_20_and0001(if_id_reg/if_id_20_and00011:O)| NONE(if_id_reg/if_id_20)| 1     |
+if_id_reg/if_id_21_and0000(if_id_reg/if_id_21_and00001:O)| NONE(if_id_reg/if_id_21)| 1     |
+if_id_reg/if_id_21_and0001(if_id_reg/if_id_21_and00011:O)| NONE(if_id_reg/if_id_21)| 1     |
+if_id_reg/if_id_22_and0000(if_id_reg/if_id_22_and00001:O)| NONE(if_id_reg/if_id_22)| 1     |
+if_id_reg/if_id_22_and0001(if_id_reg/if_id_22_and00011:O)| NONE(if_id_reg/if_id_22)| 1     |
+if_id_reg/if_id_23_and0000(if_id_reg/if_id_23_and00001:O)| NONE(if_id_reg/if_id_23)| 1     |
+if_id_reg/if_id_23_and0001(if_id_reg/if_id_23_and00011:O)| NONE(if_id_reg/if_id_23)| 1     |
+if_id_reg/if_id_24_and0000(if_id_reg/if_id_24_and00001:O)| NONE(if_id_reg/if_id_24)| 1     |
+if_id_reg/if_id_24_and0001(if_id_reg/if_id_24_and00011:O)| NONE(if_id_reg/if_id_24)| 1     |
+if_id_reg/if_id_25_and0000(if_id_reg/if_id_25_and00001:O)| NONE(if_id_reg/if_id_25)| 1     |
+if_id_reg/if_id_25_and0001(if_id_reg/if_id_25_and00011:O)| NONE(if_id_reg/if_id_25)| 1     |
+if_id_reg/if_id_26_and0000(if_id_reg/if_id_26_and00001:O)| NONE(if_id_reg/if_id_26)| 1     |
+if_id_reg/if_id_26_and0001(if_id_reg/if_id_26_and00011:O)| NONE(if_id_reg/if_id_26)| 1     |
+if_id_reg/if_id_27_and0000(if_id_reg/if_id_27_and00001:O)| NONE(if_id_reg/if_id_27)| 1     |
+if_id_reg/if_id_27_and0001(if_id_reg/if_id_27_and00011:O)| NONE(if_id_reg/if_id_27)| 1     |
+if_id_reg/if_id_28_and0000(if_id_reg/if_id_28_and00001:O)| NONE(if_id_reg/if_id_28)| 1     |
+if_id_reg/if_id_28_and0001(if_id_reg/if_id_28_and00011:O)| NONE(if_id_reg/if_id_28)| 1     |
+if_id_reg/if_id_29_and0000(if_id_reg/if_id_29_and00001:O)| NONE(if_id_reg/if_id_29)| 1     |
+if_id_reg/if_id_29_and0001(if_id_reg/if_id_29_and00011:O)| NONE(if_id_reg/if_id_29)| 1     |
+if_id_reg/if_id_2_and0000(if_id_reg/if_id_2_and00001:O)  | NONE(if_id_reg/if_id_2) | 1     |
+if_id_reg/if_id_2_and0001(if_id_reg/if_id_2_and00011:O)  | NONE(if_id_reg/if_id_2) | 1     |
+if_id_reg/if_id_30_and0000(if_id_reg/if_id_30_and00001:O)| NONE(if_id_reg/if_id_30)| 1     |
+if_id_reg/if_id_30_and0001(if_id_reg/if_id_30_and00011:O)| NONE(if_id_reg/if_id_30)| 1     |
+if_id_reg/if_id_31_and0000(if_id_reg/if_id_31_and00001:O)| NONE(if_id_reg/if_id_31)| 1     |
+if_id_reg/if_id_31_and0001(if_id_reg/if_id_31_and00011:O)| NONE(if_id_reg/if_id_31)| 1     |
+if_id_reg/if_id_3_and0000(if_id_reg/if_id_3_and00001:O)  | NONE(if_id_reg/if_id_3) | 1     |
+if_id_reg/if_id_3_and0001(if_id_reg/if_id_3_and00011:O)  | NONE(if_id_reg/if_id_3) | 1     |
+if_id_reg/if_id_4_and0000(if_id_reg/if_id_4_and00001:O)  | NONE(if_id_reg/if_id_4) | 1     |
+if_id_reg/if_id_4_and0001(if_id_reg/if_id_4_and00011:O)  | NONE(if_id_reg/if_id_4) | 1     |
+if_id_reg/if_id_5_and0000(if_id_reg/if_id_5_and00001:O)  | NONE(if_id_reg/if_id_5) | 1     |
+if_id_reg/if_id_5_and0001(if_id_reg/if_id_5_and00011:O)  | NONE(if_id_reg/if_id_5) | 1     |
+if_id_reg/if_id_6_and0000(if_id_reg/if_id_6_and00001:O)  | NONE(if_id_reg/if_id_6) | 1     |
+if_id_reg/if_id_6_and0001(if_id_reg/if_id_6_and00011:O)  | NONE(if_id_reg/if_id_6) | 1     |
+if_id_reg/if_id_7_and0000(if_id_reg/if_id_7_and00001:O)  | NONE(if_id_reg/if_id_7) | 1     |
+if_id_reg/if_id_7_and0001(if_id_reg/if_id_7_and00011:O)  | NONE(if_id_reg/if_id_7) | 1     |
+if_id_reg/if_id_8_and0000(if_id_reg/if_id_8_and00001:O)  | NONE(if_id_reg/if_id_8) | 1     |
+if_id_reg/if_id_8_and0001(if_id_reg/if_id_8_and00011:O)  | NONE(if_id_reg/if_id_8) | 1     |
+if_id_reg/if_id_9_and0000(if_id_reg/if_id_9_and00001:O)  | NONE(if_id_reg/if_id_9) | 1     |
+if_id_reg/if_id_9_and0001(if_id_reg/if_id_9_and00011:O)  | NONE(if_id_reg/if_id_9) | 1     |
+---------------------------------------------------------+-------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.775ns (Maximum Frequency: 102.299MHz)
+   Minimum input arrival time before clock: 8.361ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.775ns (frequency: 102.299MHz)
+  Total number of paths / destination ports: 10610 / 1327
+-------------------------------------------------------------------------
+Delay:               9.775ns (Levels of Logic = 5)
+  Source:            if_id_reg/if_id_59 (FF)
+  Destination:       pc_in/pcAddr_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: if_id_reg/if_id_59 to pc_in/pcAddr_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q            53   0.720   2.168  if_id_reg/if_id_59 (if_id_reg/if_id_59)
+     LUT2:I1->O            2   0.551   0.903  control/IfBeq_SW0 (N454)
+     LUT4_D:I3->LO         1   0.551   0.295  control/IfBeq (N784)
+     LUT2:I1->O           29   0.551   1.862  nextPC/npc_and00001 (nextPC/npc_and0000)
+     LUT4:I3->O            1   0.551   0.869  pc_mux/Mmux_dout_mux00001018 (pc_mux/Mmux_dout_mux00001018)
+     LUT4:I2->O            1   0.551   0.000  pc_mux/Mmux_dout_mux000010481 (NextPC<11>)
+     FDCE:D                    0.203          pc_in/pcAddr_11
+    ----------------------------------------
+    Total                      9.775ns (3.678ns logic, 6.097ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              8.361ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       pc_in/pcAddr_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to pc_in/pcAddr_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1150   0.821   4.534  rst_IBUF (rst_IBUF)
+     INV:I->O             32   0.551   1.853  pc_in_not00001_INV_0 (pc_in_not0000)
+     FDCE:CE                   0.602          pc_in/pcAddr_0
+    ----------------------------------------
+    Total                      8.361ns (1.974ns logic, 6.387ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 39.00 secs
+Total CPU time to Xst completion: 39.15 secs
+ 
+--> 
+
+Total memory usage is 372468 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  177 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

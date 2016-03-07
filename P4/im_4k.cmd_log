@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ISEProject/P4/im_4k.xst" -ofn "D:/ISEProject/P4/im_4k.syr" 

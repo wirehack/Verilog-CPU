@@ -1,0 +1,2200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xilinx="http://www.xilinx.com" >
+   <spirit:vendor>xilinx.com</spirit:vendor>
+   <spirit:library>project</spirit:library>
+   <spirit:name>BlockRAM</spirit:name>
+   <spirit:version>1.0</spirit:version>
+   <spirit:componentInstances>
+      <spirit:componentInstance>
+         <spirit:instanceName>IM_4BX6K</spirit:instanceName>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="blk_mem_gen" spirit:version="7.3" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COMPONENT_NAME">IM_4BX6K</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.INTERFACE_TYPE">Native</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_TYPE">AXI4_Full</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_SLAVE_TYPE">Memory_Slave</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_AXI_ID">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_ID_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MEMORY_TYPE">Single_Port_RAM</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_32BIT_ADDRESS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ECCTYPE">No_ECC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_ERROR_INJECTION_PINS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ERROR_INJECTION_TYPE">Single_Bit_Error_Injection</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_BYTE_WRITE_ENABLE">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.BYTE_SIZE">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ALGORITHM">Minimum_Area</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PRIMITIVE">8kx2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ASSUME_SYNCHRONOUS_CLK">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_DEPTH_A">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.READ_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OPERATING_MODE_A">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_A">Always_Enabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.READ_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OPERATING_MODE_B">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_B">Always_Enabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_OUTPUT_OF_MEMORY_PRIMITIVES">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_OUTPUT_OF_MEMORY_CORE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_REGCEA_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_MEMORY_PRIMITIVES">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_MEMORY_CORE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_REGCEB_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_INPUT_OF_SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PIPELINE_STAGES">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.LOAD_INIT_FILE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COE_FILE">no_coe_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.FILL_REMAINING_MEMORY_LOCATIONS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REMAINING_MEMORY_LOCATIONS">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_RSTA_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_MEMORY_LATCH_A">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_PRIORITY_A">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OUTPUT_RESET_VALUE_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_RSTB_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_MEMORY_LATCH_B">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_PRIORITY_B">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OUTPUT_RESET_VALUE_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_TYPE">SYNC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ADDITIONAL_INPUTS_FOR_POWER_ESTIMATION">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_CLOCK">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_WRITE_RATE">50</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_CLOCK">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_WRITE_RATE">50</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_ENABLE_RATE">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_ENABLE_RATE">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COLLISION_WARNINGS">ALL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DISABLE_COLLISION_WARNINGS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DISABLE_OUT_OF_RANGE_WARNINGS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_BRAM_BLOCK">Stand_Alone</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MEM_FILE">no_Mem_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FAMILY">spartan6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_XDEVICEFAMILY">spartan6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ELABORATION_DIR">D:/ISEProject/P8/ipcore_dir/tmp/_cg/</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INTERFACE_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_TYPE">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_SLAVE_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_AXI_ID">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_ID_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MEM_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_BYTE_SIZE">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ALGORITHM">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PRIM_TYPE">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_LOAD_INIT_FILE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INIT_FILE_NAME">no_coe_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_DEFAULT_DATA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DEFAULT_DATA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_TYPE">SYNC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_RSTA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_PRIORITY_A">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RSTRAM_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INITA_VAL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_ENA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_REGCEA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_BYTE_WEA">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WEA_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_MODE_A">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_DEPTH_A">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_DEPTH_A">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ADDRA_WIDTH">13</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_RSTB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_PRIORITY_B">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RSTRAM_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INITB_VAL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_ENB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_REGCEB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_BYTE_WEB">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WEB_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_MODE_B">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_DEPTH_B">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_DEPTH_B">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ADDRB_WIDTH">13</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MUX_PIPELINE_STAGES">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_SOFTECC_INPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_SOFTECC_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_SOFTECC">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_ECC">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_INJECTERR">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SIM_COLLISION_CHECK">ALL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_COMMON_CLK">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ENABLE_32BIT_ADDRESS">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DISABLE_WARN_BHV_COLL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DISABLE_WARN_BHV_RANGE">0</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties>
+               <xilinx:projectOptions>
+                  <xilinx:projectName>BlockRAM</xilinx:projectName>
+                  <xilinx:outputDirectory>./</xilinx:outputDirectory>
+                  <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+                  <xilinx:subWorkingDirectory>./tmp/_cg/</xilinx:subWorkingDirectory>
+               </xilinx:projectOptions>
+               <xilinx:part>
+                  <xilinx:device>xc6slx150</xilinx:device>
+                  <xilinx:deviceFamily>spartan6</xilinx:deviceFamily>
+                  <xilinx:package>fgg676</xilinx:package>
+                  <xilinx:speedGrade>-2</xilinx:speedGrade>
+               </xilinx:part>
+               <xilinx:flowOptions>
+                  <xilinx:busFormat>BusFormatParenNotRipped</xilinx:busFormat>
+                  <xilinx:designEntry>Verilog</xilinx:designEntry>
+                  <xilinx:asySymbol>true</xilinx:asySymbol>
+                  <xilinx:flowVendor>Synplicity</xilinx:flowVendor>
+                  <xilinx:addPads>true</xilinx:addPads>
+                  <xilinx:removeRPMs>false</xilinx:removeRPMs>
+                  <xilinx:createNDF>true</xilinx:createNDF>
+                  <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+                  <xilinx:formalVerification>false</xilinx:formalVerification>
+               </xilinx:flowOptions>
+               <xilinx:simulationOptions>
+                  <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+                  <xilinx:simulationLanguage>Verilog</xilinx:simulationLanguage>
+                  <xilinx:foundationSym>false</xilinx:foundationSym>
+               </xilinx:simulationOptions>
+               <xilinx:packageInfo>
+                  <xilinx:sourceCoreCreationDate>2012-11-19+16:22</xilinx:sourceCoreCreationDate>
+               </xilinx:packageInfo>
+            </xilinx:instanceProperties>
+            <xilinx:generationHistory>
+               <xilinx:fileSet>
+                  <xilinx:name>view_product_webpage_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./_dbg/xil_138.in</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:12:03 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x81D3DFB9</xilinx:checkSum>
+                     <xilinx:generationId>generationID_871148239</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./_dbg/xil_138.out</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:12:44 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8D18CFAF</xilinx:checkSum>
+                     <xilinx:generationId>generationID_871148239</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>apply_current_project_options_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>customization_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:12 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA60188DE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>model_parameter_resolution_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:20 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA60188DE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ip_xco_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.xco</xilinx:name>
+                     <xilinx:userFileType>xco</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:21 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xAA7B2F23</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>associated_files_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/blk_mem_gen_v7_3_readme.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF95F2A26</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/doc/blk_mem_gen_v7_3_vinfo.html</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0x702C7FA8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/doc/pg058-blk-mem-gen.pdf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>pdf</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC1E42F23</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ejava_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/example_design/IM_4BX6K_exdes.ucf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>ucf</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC44C6B6D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/example_design/IM_4BX6K_exdes.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8543DC26</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/example_design/IM_4BX6K_exdes.xdc</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xdc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7684D6D4</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/example_design/IM_4BX6K_prod.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xB212F7EE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/implement/implement.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8531D4D6</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/implement/implement.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x4ABD4A1B</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/implement/planAhead_ise.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA1A8D66C</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/implement/planAhead_ise.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0831C525</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/implement/planAhead_ise.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x57F3AC68</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/implement/synplify.prj</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD5F335B2</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/implement/xst.prj</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x9A385CCB</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/implement/xst.scr</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x929B1876</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/IM_4BX6K_synth.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD01C9A55</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/IM_4BX6K_tb.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8D405E19</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/addr_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0500E48D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/bmg_stim_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC3E99BBA</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/bmg_tb_pkg.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE0D93E5B</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/checker.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3EC35020</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/data_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD9F7C4A0</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/simcmds.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xFC92CE27</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/simulate_isim.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x9A3E173E</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/simulate_mti.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/simulate_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xBC2E8A8A</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/simulate_mti.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/simulate_ncsim.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x706E832F</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/simulate_vcs.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x75EC690C</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/ucli_commands.key</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x1D7E5CE1</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/vcs_session.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8AAD7EA1</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/wave_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xCC0A2148</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/functional/wave_ncsim.sv</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xAB313ACE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/random.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x2939160A</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/simcmds.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xFC92CE27</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/simulate_isim.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8D5AF484</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/simulate_mti.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/simulate_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF8007AA4</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/simulate_mti.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/simulate_ncsim.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x79D38C33</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/simulate_vcs.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF9240135</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/ucli_commands.key</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x1D7E5CE1</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/vcs_session.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC4AACABA</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/wave_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xCEB13D33</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/simulation/timing/wave_ncsim.sv</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:27:22 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF800CAFD</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ngc_netlist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.ngc</xilinx:name>
+                     <xilinx:userFileType>ngc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:24 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8F838ACC</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>obfuscate_netlist_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>padded_implementation_netlist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K_padded.ngc</xilinx:name>
+                     <xilinx:userFileType>ngcPadded</xilinx:userFileType>
+                     <xilinx:userFileType>ngc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x062263DC</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>instantiation_template_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.veo</xilinx:name>
+                     <xilinx:userFileType>veo</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:37 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xAFD268DD</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>structural_simulation_model_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.v</xilinx:name>
+                     <xilinx:userFileType>verilog</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:37 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x37C9F4F9</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>all_documents_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K/doc/blk_mem_gen_v7_3_vinfo.html</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:38 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x702C7FA8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>asy_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.asy</xilinx:name>
+                     <xilinx:userFileType>asy</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:46 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0DFAB025</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:46 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA60188DE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>xmdf_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K_xmdf.tcl</xilinx:name>
+                     <xilinx:userFileType>tclXmdf</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:46 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA0010826</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>synthesis_ise_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.gise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>gise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:51 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7C0E881C</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.xise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:51 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x54C0B078</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ise_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.gise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>gise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:57 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7C589163</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K.xise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:57 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0BED4215</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./_xmsgs/pn_parser.xmsgs</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:57 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x35B71A5F</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>deliver_readme_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>flist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./IM_4BX6K_flist.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txtFlist</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:28:58 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0DEF574E</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1508164818</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>view_readme_generator</xilinx:name>
+               </xilinx:fileSet>
+            </xilinx:generationHistory>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+         <spirit:instanceName>DM_4BX4K</spirit:instanceName>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="blk_mem_gen" spirit:version="7.3" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COMPONENT_NAME">DM_4BX4K</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.INTERFACE_TYPE">Native</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_TYPE">AXI4_Full</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_SLAVE_TYPE">Memory_Slave</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_AXI_ID">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_ID_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MEMORY_TYPE">Single_Port_RAM</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_32BIT_ADDRESS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ECCTYPE">No_ECC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_ERROR_INJECTION_PINS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ERROR_INJECTION_TYPE">Single_Bit_Error_Injection</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_BYTE_WRITE_ENABLE">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.BYTE_SIZE">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ALGORITHM">Minimum_Area</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PRIMITIVE">8kx2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ASSUME_SYNCHRONOUS_CLK">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_DEPTH_A">4096</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.READ_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OPERATING_MODE_A">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_A">Always_Enabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.READ_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OPERATING_MODE_B">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_B">Always_Enabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_OUTPUT_OF_MEMORY_PRIMITIVES">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_OUTPUT_OF_MEMORY_CORE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_REGCEA_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_MEMORY_PRIMITIVES">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_MEMORY_CORE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_REGCEB_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_INPUT_OF_SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PIPELINE_STAGES">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.LOAD_INIT_FILE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COE_FILE">no_coe_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.FILL_REMAINING_MEMORY_LOCATIONS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REMAINING_MEMORY_LOCATIONS">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_RSTA_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_MEMORY_LATCH_A">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_PRIORITY_A">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OUTPUT_RESET_VALUE_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_RSTB_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_MEMORY_LATCH_B">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_PRIORITY_B">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OUTPUT_RESET_VALUE_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_TYPE">SYNC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ADDITIONAL_INPUTS_FOR_POWER_ESTIMATION">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_CLOCK">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_WRITE_RATE">50</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_CLOCK">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_WRITE_RATE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_ENABLE_RATE">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_ENABLE_RATE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COLLISION_WARNINGS">ALL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DISABLE_COLLISION_WARNINGS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DISABLE_OUT_OF_RANGE_WARNINGS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_BRAM_BLOCK">Stand_Alone</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MEM_FILE">no_Mem_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FAMILY">spartan6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_XDEVICEFAMILY">spartan6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ELABORATION_DIR">D:/ISEProject/P8/ipcore_dir/tmp/_cg/</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INTERFACE_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_TYPE">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_SLAVE_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_AXI_ID">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_ID_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MEM_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_BYTE_SIZE">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ALGORITHM">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PRIM_TYPE">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_LOAD_INIT_FILE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INIT_FILE_NAME">no_coe_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_DEFAULT_DATA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DEFAULT_DATA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_TYPE">SYNC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_RSTA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_PRIORITY_A">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RSTRAM_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INITA_VAL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_ENA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_REGCEA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_BYTE_WEA">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WEA_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_MODE_A">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_DEPTH_A">4096</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_DEPTH_A">4096</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ADDRA_WIDTH">12</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_RSTB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_PRIORITY_B">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RSTRAM_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INITB_VAL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_ENB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_REGCEB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_BYTE_WEB">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WEB_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_MODE_B">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_DEPTH_B">4096</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_DEPTH_B">4096</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ADDRB_WIDTH">12</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MUX_PIPELINE_STAGES">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_SOFTECC_INPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_SOFTECC_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_SOFTECC">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_ECC">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_INJECTERR">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SIM_COLLISION_CHECK">ALL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_COMMON_CLK">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ENABLE_32BIT_ADDRESS">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DISABLE_WARN_BHV_COLL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DISABLE_WARN_BHV_RANGE">0</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties>
+               <xilinx:projectOptions>
+                  <xilinx:projectName>BlockRAM</xilinx:projectName>
+                  <xilinx:outputDirectory>./</xilinx:outputDirectory>
+                  <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+                  <xilinx:subWorkingDirectory>./tmp/_cg/</xilinx:subWorkingDirectory>
+               </xilinx:projectOptions>
+               <xilinx:part>
+                  <xilinx:device>xc6slx150</xilinx:device>
+                  <xilinx:deviceFamily>spartan6</xilinx:deviceFamily>
+                  <xilinx:package>fgg676</xilinx:package>
+                  <xilinx:speedGrade>-2</xilinx:speedGrade>
+               </xilinx:part>
+               <xilinx:flowOptions>
+                  <xilinx:busFormat>BusFormatParenNotRipped</xilinx:busFormat>
+                  <xilinx:designEntry>Verilog</xilinx:designEntry>
+                  <xilinx:asySymbol>true</xilinx:asySymbol>
+                  <xilinx:flowVendor>Synplicity</xilinx:flowVendor>
+                  <xilinx:addPads>true</xilinx:addPads>
+                  <xilinx:removeRPMs>false</xilinx:removeRPMs>
+                  <xilinx:createNDF>true</xilinx:createNDF>
+                  <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+                  <xilinx:formalVerification>false</xilinx:formalVerification>
+               </xilinx:flowOptions>
+               <xilinx:simulationOptions>
+                  <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+                  <xilinx:simulationLanguage>Verilog</xilinx:simulationLanguage>
+                  <xilinx:foundationSym>false</xilinx:foundationSym>
+               </xilinx:simulationOptions>
+               <xilinx:packageInfo>
+                  <xilinx:sourceCoreCreationDate>2012-11-19+16:22</xilinx:sourceCoreCreationDate>
+               </xilinx:packageInfo>
+            </xilinx:instanceProperties>
+            <xilinx:generationHistory>
+               <xilinx:fileSet>
+                  <xilinx:name>apply_current_project_options_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>customization_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:31 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x329E0C91</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>model_parameter_resolution_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:39 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x329E0C91</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ip_xco_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.xco</xilinx:name>
+                     <xilinx:userFileType>xco</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:40 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x62804542</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>associated_files_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/blk_mem_gen_v7_3_readme.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF95F2A26</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/doc/blk_mem_gen_v7_3_vinfo.html</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0x702C7FA8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/doc/pg058-blk-mem-gen.pdf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>pdf</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC1E42F23</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ejava_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/example_design/DM_4BX4K_exdes.ucf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>ucf</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC44C6B6D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/example_design/DM_4BX4K_exdes.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF110CEFD</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/example_design/DM_4BX4K_exdes.xdc</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xdc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7684D6D4</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/example_design/DM_4BX4K_prod.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x18F2A960</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/implement/implement.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x9C84BE23</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/implement/implement.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD8B1D134</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/implement/planAhead_ise.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3ECE04AF</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/implement/planAhead_ise.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x975717E6</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/implement/planAhead_ise.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x952F17B7</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/implement/synplify.prj</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x05D85E5F</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/implement/xst.prj</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xCD079ECB</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/implement/xst.scr</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x2179F953</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/DM_4BX4K_synth.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC958399D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/DM_4BX4K_tb.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xEC605BB5</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/addr_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0500E48D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/bmg_stim_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x972D9C68</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/bmg_tb_pkg.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE0D93E5B</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/checker.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3EC35020</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/data_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD9F7C4A0</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/simcmds.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xECB53E80</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/simulate_isim.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3840B46E</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/simulate_mti.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/simulate_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD49AB6B6</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/simulate_mti.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/simulate_ncsim.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x212E8683</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/simulate_vcs.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x442C449F</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/ucli_commands.key</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x52D4C447</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/vcs_session.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x5F32B2D9</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/wave_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD94118D4</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/functional/wave_ncsim.sv</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3CB279A1</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/random.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x2939160A</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/simcmds.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xECB53E80</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/simulate_isim.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x4058FBDA</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/simulate_mti.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/simulate_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xB628EE5D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/simulate_mti.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/simulate_ncsim.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x06ABD038</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/simulate_vcs.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC51C579F</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/ucli_commands.key</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x52D4C447</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/vcs_session.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x113506C2</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/wave_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x5FA5E86E</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/simulation/timing/wave_ncsim.sv</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:21:41 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA99A2DF6</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ngc_netlist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.ngc</xilinx:name>
+                     <xilinx:userFileType>ngc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:22:39 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x83484637</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>obfuscate_netlist_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>padded_implementation_netlist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K_padded.ngc</xilinx:name>
+                     <xilinx:userFileType>ngcPadded</xilinx:userFileType>
+                     <xilinx:userFileType>ngc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:22:51 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xEE6C4AEB</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>instantiation_template_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.veo</xilinx:name>
+                     <xilinx:userFileType>veo</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:22:52 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x884470EA</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>structural_simulation_model_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.v</xilinx:name>
+                     <xilinx:userFileType>verilog</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:22:52 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF390E816</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>all_documents_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K/doc/blk_mem_gen_v7_3_vinfo.html</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:22:53 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x702C7FA8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>asy_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.asy</xilinx:name>
+                     <xilinx:userFileType>asy</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:00 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC93AD84C</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:00 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x329E0C91</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>xmdf_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K_xmdf.tcl</xilinx:name>
+                     <xilinx:userFileType>tclXmdf</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:01 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x43984F79</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>synthesis_ise_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.gise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>gise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:06 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7738E34A</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.xise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:06 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD0402BEF</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ise_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.gise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>gise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:11 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x84E948C7</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K.xise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:11 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE99F1DB8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./_xmsgs/pn_parser.xmsgs</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:11 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x35B71A5F</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>deliver_readme_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>flist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./DM_4BX4K_flist.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txtFlist</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:23:12 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xB804510C</xilinx:checkSum>
+                     <xilinx:generationId>generationID_851649665</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>view_readme_generator</xilinx:name>
+               </xilinx:fileSet>
+            </xilinx:generationHistory>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+         <spirit:instanceName>BRAM_4BX6K</spirit:instanceName>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="blk_mem_gen" spirit:version="7.3" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COMPONENT_NAME">BRAM_4BX6K</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.INTERFACE_TYPE">Native</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_TYPE">AXI4_Full</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_SLAVE_TYPE">Memory_Slave</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_AXI_ID">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_ID_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MEMORY_TYPE">Single_Port_RAM</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_32BIT_ADDRESS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ECCTYPE">No_ECC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_ERROR_INJECTION_PINS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ERROR_INJECTION_TYPE">Single_Bit_Error_Injection</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_BYTE_WRITE_ENABLE">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.BYTE_SIZE">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ALGORITHM">Minimum_Area</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PRIMITIVE">8kx2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ASSUME_SYNCHRONOUS_CLK">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_DEPTH_A">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.READ_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OPERATING_MODE_A">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_A">Always_Enabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.WRITE_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.READ_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OPERATING_MODE_B">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_B">Always_Enabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_OUTPUT_OF_MEMORY_PRIMITIVES">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_OUTPUT_OF_MEMORY_CORE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_REGCEA_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_MEMORY_PRIMITIVES">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_MEMORY_CORE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_REGCEB_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTA_INPUT_OF_SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_SOFTECC">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PIPELINE_STAGES">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.LOAD_INIT_FILE">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COE_FILE">no_coe_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.FILL_REMAINING_MEMORY_LOCATIONS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REMAINING_MEMORY_LOCATIONS">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_RSTA_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_MEMORY_LATCH_A">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_PRIORITY_A">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OUTPUT_RESET_VALUE_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_RSTB_PIN">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_MEMORY_LATCH_B">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_PRIORITY_B">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OUTPUT_RESET_VALUE_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RESET_TYPE">SYNC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ADDITIONAL_INPUTS_FOR_POWER_ESTIMATION">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_CLOCK">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_WRITE_RATE">50</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_CLOCK">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_WRITE_RATE">50</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_A_ENABLE_RATE">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PORT_B_ENABLE_RATE">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.COLLISION_WARNINGS">ALL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DISABLE_COLLISION_WARNINGS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DISABLE_OUT_OF_RANGE_WARNINGS">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.USE_BRAM_BLOCK">Stand_Alone</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MEM_FILE">no_Mem_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FAMILY">spartan6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_XDEVICEFAMILY">spartan6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ELABORATION_DIR">D:/ISEProject/P8/ipcore_dir/tmp/_cg/</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INTERFACE_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_TYPE">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_SLAVE_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_AXI_ID">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AXI_ID_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MEM_TYPE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_BYTE_SIZE">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ALGORITHM">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PRIM_TYPE">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_LOAD_INIT_FILE">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INIT_FILE_NAME">no_coe_file_loaded</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_DEFAULT_DATA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DEFAULT_DATA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_TYPE">SYNC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_RSTA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_PRIORITY_A">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RSTRAM_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INITA_VAL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_ENA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_REGCEA">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_BYTE_WEA">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WEA_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_MODE_A">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_WIDTH_A">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_DEPTH_A">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_DEPTH_A">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ADDRA_WIDTH">13</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_RSTB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RST_PRIORITY_B">CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RSTRAM_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INITB_VAL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_ENB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_REGCEB">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_BYTE_WEB">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WEB_WIDTH">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_MODE_B">WRITE_FIRST</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_WIDTH_B">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_WRITE_DEPTH_B">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_READ_DEPTH_B">6144</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ADDRB_WIDTH">13</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MUX_PIPELINE_STAGES">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_SOFTECC_INPUT_REGS_A">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_SOFTECC_OUTPUT_REGS_B">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_SOFTECC">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_ECC">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_HAS_INJECTERR">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SIM_COLLISION_CHECK">ALL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_COMMON_CLK">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ENABLE_32BIT_ADDRESS">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DISABLE_WARN_BHV_COLL">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DISABLE_WARN_BHV_RANGE">0</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties>
+               <xilinx:projectOptions>
+                  <xilinx:projectName>BlockRAM</xilinx:projectName>
+                  <xilinx:outputDirectory>./</xilinx:outputDirectory>
+                  <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+                  <xilinx:subWorkingDirectory>./tmp/_cg/</xilinx:subWorkingDirectory>
+               </xilinx:projectOptions>
+               <xilinx:part>
+                  <xilinx:device>xc6slx150</xilinx:device>
+                  <xilinx:deviceFamily>spartan6</xilinx:deviceFamily>
+                  <xilinx:package>fgg676</xilinx:package>
+                  <xilinx:speedGrade>-2</xilinx:speedGrade>
+               </xilinx:part>
+               <xilinx:flowOptions>
+                  <xilinx:busFormat>BusFormatParenNotRipped</xilinx:busFormat>
+                  <xilinx:designEntry>Verilog</xilinx:designEntry>
+                  <xilinx:asySymbol>true</xilinx:asySymbol>
+                  <xilinx:flowVendor>Synplicity</xilinx:flowVendor>
+                  <xilinx:addPads>true</xilinx:addPads>
+                  <xilinx:removeRPMs>false</xilinx:removeRPMs>
+                  <xilinx:createNDF>true</xilinx:createNDF>
+                  <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+                  <xilinx:formalVerification>false</xilinx:formalVerification>
+               </xilinx:flowOptions>
+               <xilinx:simulationOptions>
+                  <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+                  <xilinx:simulationLanguage>Verilog</xilinx:simulationLanguage>
+                  <xilinx:foundationSym>false</xilinx:foundationSym>
+               </xilinx:simulationOptions>
+               <xilinx:packageInfo>
+                  <xilinx:sourceCoreCreationDate>2012-11-19+16:22</xilinx:sourceCoreCreationDate>
+               </xilinx:packageInfo>
+            </xilinx:instanceProperties>
+            <xilinx:generationHistory>
+               <xilinx:fileSet>
+                  <xilinx:name>apply_current_project_options_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>customization_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:26 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA60188DE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>model_parameter_resolution_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:35 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA60188DE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ip_xco_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.xco</xilinx:name>
+                     <xilinx:userFileType>xco</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:35 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA8F5CDAD</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>associated_files_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/blk_mem_gen_v7_3_readme.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF95F2A26</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/doc/blk_mem_gen_v7_3_vinfo.html</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0x702C7FA8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/doc/pg058-blk-mem-gen.pdf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>pdf</xilinx:userFileType>
+                     <xilinx:timeStamp>Sun Oct 13 18:11:47 GMT 2013</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC1E42F23</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ejava_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/example_design/BRAM_4BX6K_exdes.ucf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>ucf</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC44C6B6D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/example_design/BRAM_4BX6K_exdes.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x68019A97</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/example_design/BRAM_4BX6K_exdes.xdc</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xdc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7684D6D4</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/example_design/BRAM_4BX6K_prod.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x944A6F01</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/implement/implement.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xFDFBA984</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/implement/implement.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x888AE367</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/implement/planAhead_ise.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC23EF34C</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/implement/planAhead_ise.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD50EAFB0</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/implement/planAhead_ise.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x9ABA5737</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/implement/synplify.prj</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x445A0478</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/implement/xst.prj</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3861BBD8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/implement/xst.scr</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA3E593EA</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/BRAM_4BX6K_synth.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x626E2988</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/BRAM_4BX6K_tb.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xDA3D8412</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/addr_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0500E48D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/bmg_stim_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC3E99BBA</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/bmg_tb_pkg.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE0D93E5B</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/checker.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3EC35020</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/data_gen.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD9F7C4A0</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/simcmds.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF65C1F6E</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/simulate_isim.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA74B4802</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/simulate_mti.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/simulate_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x29C39CF5</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/simulate_mti.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/simulate_ncsim.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xB7EAB498</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/simulate_vcs.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xDA11E2F3</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/ucli_commands.key</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x241D1523</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/vcs_session.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE55CE056</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/wave_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x475BD33A</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/functional/wave_ncsim.sv</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x19F56067</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/random.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x2939160A</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/simcmds.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF65C1F6E</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/simulate_isim.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD6395BE7</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/simulate_mti.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/simulate_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x369B534E</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/simulate_mti.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x86EA5D67</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/simulate_ncsim.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x2654A2C9</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/simulate_vcs.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x08BF64C7</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/ucli_commands.key</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x241D1523</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/vcs_session.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7BCA5CAA</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/wave_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x6881718B</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/simulation/timing/wave_ncsim.sv</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:00:36 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x32FC48F0</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ngc_netlist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.ngc</xilinx:name>
+                     <xilinx:userFileType>ngc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:01:38 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x39C0537C</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>obfuscate_netlist_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>padded_implementation_netlist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K_padded.ngc</xilinx:name>
+                     <xilinx:userFileType>ngcPadded</xilinx:userFileType>
+                     <xilinx:userFileType>ngc</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:01:50 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xECA6EBD6</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>instantiation_template_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.veo</xilinx:name>
+                     <xilinx:userFileType>veo</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:01:51 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x87B1AA5B</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>structural_simulation_model_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.v</xilinx:name>
+                     <xilinx:userFileType>verilog</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:01:51 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x66CECD04</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>all_documents_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K/doc/blk_mem_gen_v7_3_vinfo.html</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:01:52 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x702C7FA8</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>asy_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.asy</xilinx:name>
+                     <xilinx:userFileType>asy</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:02:00 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x96FDCABB</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./summary.log</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:02:00 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA60188DE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>xmdf_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K_xmdf.tcl</xilinx:name>
+                     <xilinx:userFileType>tclXmdf</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:02:00 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE35B76FE</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>synthesis_ise_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.gise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>gise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:02:06 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7ED6F18D</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.xise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:02:06 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD652568B</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ise_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.gise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>gise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:02:11 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x6355A797</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K.xise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:02:11 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x817E7849</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>deliver_readme_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>flist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./BRAM_4BX6K_flist.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txtFlist</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:02:12 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x18953D18</xilinx:checkSum>
+                     <xilinx:generationId>generationID_1767355954</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>view_readme_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>view_product_webpage_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./_dbg/xil_138.in</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:12:03 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x81D3DFB9</xilinx:checkSum>
+                     <xilinx:generationId>generationID_871148239</xilinx:generationId>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./_dbg/xil_138.out</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Dec 21 13:12:44 GMT 2015</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8D18CFAF</xilinx:checkSum>
+                     <xilinx:generationId>generationID_871148239</xilinx:generationId>
+                  </xilinx:file>
+               </xilinx:fileSet>
+            </xilinx:generationHistory>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+   </spirit:componentInstances>
+   <spirit:vendorExtensions>
+      <xilinx:instanceProperties>
+         <xilinx:projectOptions>
+            <xilinx:projectName>BlockRAM</xilinx:projectName>
+            <xilinx:outputDirectory>./</xilinx:outputDirectory>
+            <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+            <xilinx:subWorkingDirectory>./tmp/_cg/</xilinx:subWorkingDirectory>
+         </xilinx:projectOptions>
+         <xilinx:part>
+            <xilinx:device>xc6slx150</xilinx:device>
+            <xilinx:deviceFamily>spartan6</xilinx:deviceFamily>
+            <xilinx:package>fgg676</xilinx:package>
+            <xilinx:speedGrade>-2</xilinx:speedGrade>
+         </xilinx:part>
+         <xilinx:flowOptions>
+            <xilinx:busFormat>BusFormatParenNotRipped</xilinx:busFormat>
+            <xilinx:designEntry>Verilog</xilinx:designEntry>
+            <xilinx:asySymbol>true</xilinx:asySymbol>
+            <xilinx:flowVendor>Synplicity</xilinx:flowVendor>
+            <xilinx:addPads>true</xilinx:addPads>
+            <xilinx:removeRPMs>false</xilinx:removeRPMs>
+            <xilinx:createNDF>true</xilinx:createNDF>
+            <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+            <xilinx:formalVerification>false</xilinx:formalVerification>
+         </xilinx:flowOptions>
+         <xilinx:simulationOptions>
+            <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+            <xilinx:simulationLanguage>Verilog</xilinx:simulationLanguage>
+            <xilinx:foundationSym>false</xilinx:foundationSym>
+         </xilinx:simulationOptions>
+      </xilinx:instanceProperties>
+   </spirit:vendorExtensions>
+</spirit:design>
+

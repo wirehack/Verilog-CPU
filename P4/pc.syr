@@ -1,0 +1,331 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: pc.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pc.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pc"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : pc
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "datapath/pc.v" in library work
+Module <pc> compiled
+No errors in compilation
+Analysis of file <"pc.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <pc> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <pc>.
+Module <pc> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <pc>.
+    Related source file is "datapath/pc.v".
+WARNING:Xst:647 - Input <NextPC<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 30-bit register for signal <Instr>.
+Unit <pc> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 30-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <Instr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <1> has a constant value of 0 in block <Instr>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_1> is equivalent to the following FF/Latch, which will be removed : <1> 
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <LPM_DFF_1>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <pc> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pc, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : pc.ngr
+Top Level Output File Name         : pc
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 62
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# FlipFlops/Latches                : 28
+#      FDC                         : 26
+#      FDP                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 59
+#      IBUF                        : 29
+#      OBUF                        : 30
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa3s50vqg100-4 
+
+ Number of Slices:                        0  out of    768     0%  
+ Number of IOs:                          62
+ Number of bonded IOBs:                  60  out of     63    95%  
+    IOB Flip Flops:                      28
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 28    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 1.825ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Offset:              1.825ns (Levels of Logic = 1)
+  Source:            NextPC<28> (PAD)
+  Destination:       Instr_28 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: NextPC<28> to Instr_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.801  NextPC_28_IBUF (NextPC_28_IBUF)
+     FDC:D                     0.203          Instr_28
+    ----------------------------------------
+    Total                      1.825ns (1.024ns logic, 0.801ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            Instr_29 (FF)
+  Destination:       Instr<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: Instr_29 to Instr<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.720   0.801  Instr_29 (Instr_29)
+     OBUF:I->O                 5.644          Instr_31_OBUF (Instr<31>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.81 secs
+ 
+--> 
+
+Total memory usage is 286564 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

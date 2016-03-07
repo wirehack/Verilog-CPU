@@ -1,0 +1,7 @@
+verilog isim_temp "ipcore_dir/signed_divider.v"
+verilog isim_temp "ipcore_dir/signed_multiplier.v"
+verilog isim_temp "ipcore_dir/unsigned_divider.v"
+verilog isim_temp "ipcore_dir/unsigned_multiplier.v"
+verilog isim_temp "datapath/multDiv.v"
+verilog isim_temp "datapath/multDiv_tb.v"
+verilog isim_temp "D:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

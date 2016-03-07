@@ -1,0 +1,49 @@
+
+# file: synplify.prj
+#add_file options
+add_file -verilog "../../clk_ip_core.v"
+add_file -verilog "../example_design/clk_ip_core_exdes.v"
+
+#reporting options
+
+#implementation:
+impl -add clk_ip_core
+
+set_option -vlog_std v2001
+
+#device options
+set_option -technology spartan6
+set_option -part xc6slx150
+set_option -package fgg676
+set_option -speed_grade -2
+set_option -part_companion ""
+
+
+#compilation/mapping options
+set_option -default_enum_encoding default
+set_option -symbolic_fsm_compiler 1
+set_option -resource_sharing 1
+set_option -use_fsm_explorer 0
+set_option -top_module "clk_ip_core_exdes"
+
+#map options
+set_option -frequency 400.000
+set_option -fanout_limit 10000
+set_option -disable_io_insertion 0
+set_option -pipe 0
+set_option -update_models_cp 0
+set_option -verification_mode 0
+set_option -fixgatedclocks 0
+set_option -modular 0
+set_option -retiming 0
+
+#simulation options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 0
+
+#set result format/file last
+project -result_file "results/clk_ip_core_exdes.edf"
+impl -active "clk_ip_core"

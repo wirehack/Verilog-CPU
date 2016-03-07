@@ -1,0 +1,47 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    22:43:03 10/18/2015 
+// Design Name: 
+// Module Name:    counter 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module counter(
+    input set,
+    input clk,
+    input reset,
+    output counter,
+    output carry_out
+    );
+    reg[3:0] counter=0;
+    reg carry_out=0;
+    wire
+    always@(posedge clk)
+        begin
+            if(reset==1)
+                begin counter=0; carry_out=0; end
+            else if()
+            else if(counter==4'b1111)
+                begin 
+                    if(carry_out==0)
+                        begin counter=0; carry_out=1; end
+                    else
+                        begin counter=0; carry_out=0; end
+                end
+            else
+                begin counter=counter+1; end
+        end
+endmodule
+         

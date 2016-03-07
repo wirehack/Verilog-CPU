@@ -1,0 +1,60 @@
+`timescale 1ns / 1ps
+
+////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer:
+//
+// Create Date:   19:25:12 10/16/2015
+// Design Name:   full_adder
+// Module Name:   D:/ISEProject/adder/full_adder_tb.v
+// Project Name:  adder
+// Target Device:  
+// Tool versions:  
+// Description: 
+//
+// Verilog Test Fixture created by ISE for module: full_adder
+//
+// Dependencies:
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+////////////////////////////////////////////////////////////////////////////////
+
+module full_adder_tb;
+
+	// Inputs
+	reg A;
+	reg B;
+	reg CI;
+
+	// Outputs
+	wire SO;
+	wire CO;
+
+	// Instantiate the Unit Under Test (UUT)
+	full_adder uut (
+		.A(A), 
+		.B(B), 
+		.CI(CI), 
+		.SO(SO), 
+		.CO(CO)
+	);
+
+	initial begin
+		// Initialize Inputs
+		A = 0;
+		B = 0;
+		CI = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;       
+		// Add stimulus here
+        #20 A=1;
+        #20 B=1;
+        #20 CI=1;
+        #20 B=0;
+	end
+endmodule
+

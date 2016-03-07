@@ -1,0 +1,31 @@
+`timescale 1ns / 1ps
+`include "adder_4bit.v"
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    19:47:48 10/24/2015 
+// Design Name: 
+// Module Name:    adder_8bit 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module adder_8bit(
+    input [7:0] A,
+    input [7:0] B,
+    input C0,
+    output [7:0] SUM,
+    output Overflow
+    );
+    adder_4bit adder1(A[3:0],B[3:0],C0,SUM[3:0],C1),
+    adder2(A[4:7],B[4:7],C1,SUM[4:7],Overflow);
+endmodule
